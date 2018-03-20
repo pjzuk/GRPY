@@ -1,0 +1,9 @@
+
+
+This directory consists of
+  -> GRPY:
+     program for calculation of hydrodynamic properties of rigid models of molecules
+  -> hydrAtom:
+     set of scripts for constructing hydrated atom bead model from pdb file
+  -> userGuide.pdf
+     user guide

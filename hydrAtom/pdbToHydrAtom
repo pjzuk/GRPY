@@ -1,0 +1,61 @@
+#!/bin/bash
+
+# this script takes pdb file as a command line arument and provided
+#  -> path to MSMS (Sanders 1996) program folder
+#  -> path to hydrAtom folder
+# calculates the coordinates and radii of hydrated atomic model of biomolecule
+
+# after specifing directories below execute
+# <path to this script>/pdbToHydrAtom <pdb file>
+# for example in example folder
+# ../pdbToHydrAtom 1znf.pdb
+
+# the final result is _hydAtom.xyzr file containing coordinates and radii of atoms
+# constituig molecule surface enalrged by hydration radius
+# with appropriate header a GRPY or hydro++ file can be constructed
+
+# absolute path to folder containing msms
+# must be specified
+pathToMsmsFolder=/home/pawel/Pulpit/Wajnryb/msms
+# msms executable name
+# must be specified
+msmsExec=msms.x86_64Linux2.2.6.1
+# absolute path to hydrAtom folder containing pdb_to_xyzrn_mod file 
+# must be specified
+pathToHydrAtomFolder=/home/pawel/Pulpit/Wajnryb/biophysJournal/hydrAtom
+
+# copy patched for remote folder execution pdb_to_xyzrn to msmsFolder
+if [ ! -f $pathToMsmsFolder"/pdb_to_xyzrn_mod" ]
+then
+  cp $pathToHydrAtomFolder"/pdb_to_xyzrn_mod" $pathToMsmsFolder
+fi
+
+# create names
+oryginalPDBFile=${BASH_ARGV[0]}
+noHETFile=${oryginalPDBFile%.*}"_noHET.pdb"
+xyzrnFile=${noHETFile%.*}".xyzrn"
+msmsFile=${xyzrnFile=%.*}"_msms"
+hydrAtomxyzrFile=${oryginalPDBFile%.*}"_hydAtom.xyzr"
+grpyHeaderFile=${oryginalPDBFile%.*}".header"
+grpyInputFile=${oryginalPDBFile%.*}"_hydAtom_GRPY"
+
+# remove HETATM lines from pdb entry
+sed '/^HETATM/ d' $oryginalPDBFile > $noHETFile
+
+# create xyzrn file for msms calculation
+$pathToMsmsFolder"/pdb_to_xyzrn_mod"  $noHETFile  > $xyzrnFile
+# run msms with probe size 1.4 A
+$pathToMsmsFolder"/"$msmsExec -pr 1.4 -if $xyzrnFile -of $msmsFile
+# run python (version 2.7) script to add beads constituing surface and add hydration radii to .xyzr file
+python $pathToHydrAtomFolder"/msmsVertNameTohydrAtom.py" $msmsFile".vert" > $hydrAtomxyzrFile
+
+# if GRPY header file <pdb file name>.header (first block of GRPY input file) exist then construct GRPY native format input file
+if [ -f $grpyHeaderFile ]
+then
+  nLines=$(wc -l < "$hydrAtomxyzrFile")
+  #ignore number of beads line
+  head -n 7 $grpyHeaderFile > $grpyInputFile
+  echo $nLines >> $grpyInputFile
+  cat $hydrAtomxyzrFile >> $grpyInputFile
+fi
+

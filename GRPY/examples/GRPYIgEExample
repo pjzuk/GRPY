@@ -1,0 +1,23 @@
+dltGeo2 model                   Title
+20.                             Temperature, centigrade
+0.010                           Solvent viscosity
+158.E+3                         Molecular weight
+0.760                           Specific volume of macromolecule
+1.0                             Solution density
+1.E-7                           Unit length in cm
+15                              Number of beads
+-12.9000  0.0000  0.0000  2.05
+ -8.8     0.      0.      2.05
+ -6.0     0.      0.      0.75
+ -4.5     0.      0.      0.75
+ -3.0     0.      0.      0.75
+ -1.5     0.      0.      0.75
+  0.      0.      0.      0.75
+  0.5     0.      0.8660  0.25
+  0.75    0.      1.2990  0.25
+  0.5     0.     -0.8660  0.25
+  0.75    0.     -1.2990  0.25
+  1.9     0.     -3.2909  2.05
+  3.95   -3.5507 -3.2909  2.05
+  1.9     0.      3.2909  2.05
+  3.95    3.5507  3.2909  2.05

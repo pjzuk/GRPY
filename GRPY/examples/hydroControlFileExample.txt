@@ -1,0 +1,31 @@
+model dltGeo2                   Title
+Dumbbell                        filename for output files
+hydroDumbbell                   Structural (bead coords) file
+12                              ICASE
+20.                             Temperature, centigrade
+0.010                           Solvent viscosity
+1.E+3                           Molecular weight
+0.9                             Specific volume of macromolecule
+1.0                             Solution density
+26,                Number of values of H
+5.e+6,             HMAX
+30,                Number of intervals for the distance distribution
+240.E-8            RMAX
+10000,             (ONLY IF ISCA IS NOT ZERO) NTRIALS
+1                  IDIF=1 (yes) for full diffusion tensors
+model dltGeo1                   Title
+IgE                             filename for output files
+hydroIgE                        Structural (bead coords) file
+12                              ICASE
+20.                             Temperature, centigrade
+0.010                           Solvent viscosity
+158.E+3                         Molecular weight
+0.760                           Specific volume of macromolecule
+1.0                             Solution density
+26,                Number of values of H
+5.e+6,             HMAX
+30,                Number of intervals for the distance distribution
+240.E-8            RMAX
+10000,             (ONLY IF ISCA IS NOT ZERO) NTRIALS
+1                  IDIF=1 (yes) for full diffusion tensors
+*           End of file

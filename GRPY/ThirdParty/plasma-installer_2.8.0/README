@@ -1,0 +1,321 @@
+                           PLASMA INSTALLATION GUIDE
+     __________________________________________________________________
+
+Introduction
+
+   PLASMA  installer  is  a  set  of  python scripts developed to ease the
+   installation  of PLASMA (Parallel Linear Algebra Software for Multicore
+   Architectures)  and  all  software  packages  required by PLASMA: BLAS,
+   CBLAS,  LAPACK & libtmg, LAPACKE and hwloc. (Section [1]PLASMA Software
+   Stack provides a brief description for each package.)
+
+   None of these packages has to be present on the system prior to running
+   the  PLASMA  installer in order for the installation to succeed. If any
+   component  is  missing,  the  implementation provided by Netlib will be
+   automatically  downloaded  and  installed prior to PLASMA installation.
+   The only exception is the hwloc package, which is optional and will not
+   be  automatically  installed  if  not  already  present  at the time of
+   running the installer.
+
+   The  user  should  not download the PLASMA tarball prior to running the
+   installer.  The  installer  automatically downloads the PLASMA tarball.
+   This  behavior  can be overwritten if desired. (Section [2]Installation
+   Options provides more details.)
+     __________________________________________________________________
+
+Installing BLAS
+
+   It is crucial that the user provides an optimized implementation of
+   BLAS. If appropriate BLAS implementation is not installed prior to
+   PLASMA installation, the PLASMA installer will download and install the
+   reference FORTRAN implementation of BLAS from Netlib. This
+   implementation should be considered the definition of BLAS rather than
+   an implementation. It is completely unoptimized for modern processors
+   (what no compiler flag can remedy). The use of Netlib BLAS will produce
+   an order of magnitude lower performance than optimized BLAS.
+
+   A  common  mistake  when  attempting  to run with optimized BLAS, is to
+   forget to notify the OS about the location of the dynamic library. This
+   it  done  by  including  the  location  of  the  dynamic library in the
+   LD_LIBRARY_PATH environment variable, e.g.:
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/path_to_blas/lib/
+
+   Since  version  2.5.1, PLASMA can exploits multithreaded BLAS libraries
+   to  improve  performance  of  eigenvalue  solvers. However, every other
+   algorithm  still use only sequential library. It is then recommended to
+   linked  with  a  sequential  BLAS  library if eigenvalue/singular value
+   solver  is not of interest. If PLASMA is linked against a multithreaded
+   BLAS  library,  the  multithreading  can  be  disabled  by  setting the
+   appropriate environment variable from the command prompt, for instance:
+export OMP_NUM_THREADS=1
+export MKL_NUM_THREADS=1
+export GOTO_NUM_THREADS=1
+export VECLIB_MAXIMUM_THREADS=1
+
+   If  eigenvalue/singular  value solvers are needed, it is recommended to
+   link  PLASMA  with multithreaded Intel MKL or AMD ACML BLAS library. In
+   order  to  let PLASMA switch automatically the number of threads in the
+   proper section, it is required to specify which BLAS library is used in
+   the    make.inc    file   by   either   adding   -DPLASMA_WITH_MKL   or
+   -DPLASMA_WITH_ACML to the compilation flags (CFLAGS). Then, PLASMA will
+   change the number of threads by calling respectively, omp_num_threads()
+   or mkl_num_threads(). It is important to note that with MKL, PLASMA has
+   to  disable  the  affinity  of  the  Intel OpenMP scheduler by calling:
+   kmp_set_defaults("KMP_AFFINITY=disabled")
+     __________________________________________________________________
+
+Installing hwloc
+
+   The  hwloc  package  is  an  optional component and PLASMA can be build
+   without  it.  However,  if present, hwloc will help with mapping of the
+   software  to  the  hardware  resources.  hwloc  can  be  downloaded and
+   installed from source code
+   ([3]http://www.open-mpi.org/projects/hwloc/).    However,    hwloc   is
+   included  in many Linux distributions and can be easily installed using
+   standard  package  management  tools,  e.g.  the  apt-get  command line
+   utility (requires root access):
+apt-get install hwloc
+
+   Also,  PLASMA  installer  uses the pkg-config utility to detect and use
+   hwloc.  If not already present, pkg-config can be installed in the same
+   way, e.g.:
+apt-get install pkg-config
+
+   Also, the location of the “hwloc.pc” file (commonly /usr/lib/pkgconfig)
+   has to be included in the PKG_CONFIG_PATH environment variable, e.g.:
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/lib/pkgconfig
+     __________________________________________________________________
+
+Installation Options
+
+   The  installer  provides  the  following  set  of  command line options
+   (default settings are given in square brackets):
+-h or --help        : Display this help and exit.
+--prefix=[DIR]      : Install libraries in the DIR directory. [./install]
+--build=[DIR]       : Build libraries in the DIR directory. [./build]
+--cc=[CMD]          : Use CMD to compile C files. [cc]
+--fc=[CMD]          : Use CMD to compile Fortran files. [gfortran]
+--cflags=[FLAGS]    : Use FLAGS for the C compiler. [-02]
+--fflags=[FLAGS]    : Use FLAGS for the Fortran compiler. [-O2]
+--ldflags_c=[FLAGS] : Use FLAGS for linking using C compiler.
+--ldflags_fc=[flags]: Use FLAGS for linking using Fortran compiler.
+                      (By default ldflags_fc = ldflags_c.)
+--make=[CMD]        : Use CMD as the ``make'' command. [make]
+--blaslib=[LIB]     : Use LIB as the BLAS library.
+                      (The path should be absolute if --prefix is used.)
+--cblaslib=[LIB]    : Use LIB as the CBLAS library.
+                      (The path should be absolute if --prefix is used.)
+--lapacklib=[LIB]   : Use LIB as the LAPACK library.
+                      (The path should be absolute if --prefix is used.)
+--lapclib=[LIB]     : Use LIB as the LAPACK C API.
+                      (The path should be absolute if --prefix is used.)
+--downblas          : Download and install BLAS from Netlib.
+--downcblas         : Download and install CBLAS from Netlib.
+--downlapack        : Download and install LAPACK from Netlib.
+--downlapc          : Download and install LAPACK C API from Netlib.
+--downall           : Download and install all missing components from Netlib.
+--[no]testing       : Enables/disables testings.
+                      If enabled, all external libraries are required and tested
+.
+                      (Enabled by default.)
+--nbcores=[CORES]   : Use CORES number of cores for testing. [half of all the co
+res]
+--clean             : Clean up the installer directory.
+--src               : Generate the make.inc file for PLASMA based on the set of
+provided options.
+                      Automatically download and install all the missing compone
+nts.
+                      (Testing is deactivated.)
+                      This option is mostly meant for developers, who check out
+PLASMA sources from its repository.
+
+   The installer can also be used without the wget command or access to a
+   network connection. Prior to running the installer the tarball of each
+   missing component has to be placed in the build/download directory. The
+   components can be found in the following locations:
+     * [4]http://netlib.org/blas/blas.tgz
+     * [5]http://www.netlib.org/blas/blast-forum/cblas.tgz
+     * [6]http://www.netlib.org/lapack/lapack.tgz
+     * [7]http://icl.cs.utk.edu/projectsfiles/plasma/pubs/lapacke.tgz
+     * [8]http://icl.cs.utk.edu/projectsfiles/plasma/pubs/plasma.tar.gz
+     __________________________________________________________________
+
+Installer Usage Examples
+
+   For an installation with gcc, gfortran and Netlib BLAS type:
+./setup.py --cc=gcc --fc=gfortran --downblas
+
+   For an installation with gcc, gfortran and vecLib (Mac OS X) type:
+./setup.py --cc=gcc --fc=gfortran --blaslib="-framework veclib"
+
+   For an installation with gcc, gfortran and ATLAS type:
+./setup.py --cc=gcc --fc=gfortran --blaslib="-lf77blas -lcblas -latlas"
+
+   For an installation with gcc, gfortran and Goto BLAS type:
+./setup.py --cc=gcc --fc=gfortran --blaslib="-lgoto"
+
+   For an installation with xlc, xlf and ESSL type:
+./setup.py --cc=xlc --fc=xlf --blaslib="-lessl"
+
+   A common mistake, when attempting to build with optimized BLAS, is to
+   forget to notify the compiler about the location of the library. This
+   it done by including the location of the library in the LD_LIBRARY_PATH
+   environment variable, e.g.:
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/path_to_blas/lib
+
+   Alternatively, the -L compiler flag can be included in the --blaslib
+   option (as show in further examples).
+
+   Build  and  install  in the current directory using Intel ICC and IFORT
+   for compilation.
+
+   Use  sequential MKL for the EM64T architecture for BLAS. Use LAPACK and
+   CBLAS from Netlib and not from MKL:
+./setup.py --prefix="/opt" \
+           --cc=icc        \
+           --fc=ifort      \
+           --blaslib="-L/intel/mkl/lib/em64t -lmkl_intel_lp64 -lmkl_sequential -
+lmkl_core" \
+           --downlapack \
+           --downcblas
+
+   Do  the same, but instead of downloading PLASMA, generate a make.inc to
+   use with PLASMA sources:
+./setup.py --prefix="/opt" \
+           --cc=icc        \
+           --fc=ifort      \
+           --blaslib="-L/intel/mkl/lib/em64t -lmkl_intel_lp64 -lmkl_sequential -
+lmkl_core" \
+           --downlapack \
+           --downcblas  \
+           --src
+
+   Finally, an empty template for cutting and pasting:
+./setup.py --prefix="" \
+           --build="" \
+           --cc= \
+           --fc= \
+           --cflags="" \
+           --fflags="" \
+           --ldflags_c="" \
+           --ldflags_fc="" \
+           --make= \
+           --blaslib="" \
+           --cblaslib="" \
+           --lapacklib="" \
+           --lapclib="" \
+           --downblas \
+           --downcblas \
+           --downlapack \
+           --downlapc \
+           --downall \
+           --[no]testing \
+           --nbcores= \
+           --src
+
+   [9]Intel Math Kernel Library Link Line Advisor is an excellent tool for
+   selecting the right link line when using Intel MKL library.
+     __________________________________________________________________
+
+PLASMA Software Stack
+
+   BLAS
+          BLAS (Basic Linear Algebra Subprograms), are a de facto standard
+          for  basic  linear  algebra operations such as vector and matrix
+          multiplication. FORTRAN implementation of BLAS is available from
+          Netlib  ([10]Netlib  BLAS).  Also,  C  implementation of BLAS is
+          included   in  GSL  ([11]GNU  Scientific  Library).  Both  these
+          implementations  are  reference  implementation of BLAS, are not
+          optimized  for  modern  processor  architectures  and provide an
+          order    of   magnitude   lower   performance   than   optimized
+          implementations.  Highly  optimized  implementations of BLAS are
+          available  from  many  hardware  vendors, such as Intel and AMD.
+          Fast  implementations  are  also available as academic packages,
+          such  as  ATLAS Goto BLAS. The standard interface to BLAS is the
+          FORTRAN interface.
+
+   CBLAS
+          CBLAS  is  a  C  language interface to BLAS. Most commercial and
+          academic  implementations  of  BLAS  also  provide CBLAS. Netlib
+          provides  a  reference implementation of CBLAS on top of FORTRAN
+          BLAS  ([12]Netlib  CBLAS).  Since  GSL  is  implemented in C, it
+          naturally provides CBLAS.
+
+   LAPACK
+          LAPACK  (Linear  Algebra  PACKage)  is  a  software  library for
+          numerical linear algebra, a successor of LINPACK and EISPACK and
+          a  predecessor  of  PLASMA. LAPACK provides routines for solving
+          linear  systems  of  equations,  linear  least  square problems,
+          eigenvalue problems and singular value problems. Most commercial
+          and academic BLAS packages also provide some LAPACK routines.
+
+   CLAPACK
+          CLAPACK  is  a  C  implementation  of  LAPACK provided by Netlib
+          ([13]Netlib   CLAPACK).   CLAPACK   is   produced  by  automatic
+          translation  of  FORTRAN  LAPACK  to  C  using  the  F2C utility
+          ([14]Netlib  F2C).  The  purpose of CLAPACK is to provide LAPACK
+          implementation  in  situations  when  FORTRAN  compiler  is  not
+          available.  Despite being implemented in C, CLAPACK provides the
+          “original” FORTRAN interface, which for the most part conforms
+          to the GNU g77 ABI (Application Binary Interface).
+
+   LAPACKE
+          LAPACKE  is a C language interface to LAPACK (or CLAPACK). It is
+          produced  by  Intel  in coordination with the LAPACK team and is
+          available  in  source  code  from Netlib in its original version
+          ([15]Netlib  LAPACKE)  and  from  PLASMA  website in an extended
+          version  ([16]LAPACKE  for  PLASMA). In addition to implementing
+          the   C   interface,   LAPACKE   also  provides  routines  which
+          automatically  handle  workspace  allocation,  making the use of
+          LAPACK much more convenient.
+
+   libtmg
+          libtmg is a component of the LAPACK library, containing routines
+          for  generation  of  input  matrices  for  testing and timing of
+          LAPACK.  The testing and timing suites of LAPACK require libtmg,
+          but not the library itself. (The LAPACK library can be built and
+          used without libtmg.)
+
+   hwloc
+          hwloc  (Portable  Hardware  Locality)  is a software package for
+          accessing   the   topology   of  a  multicore  system  including
+          components  like:  cores,  sockets, caches and NUMA nodes. hwloc
+          ([17]http://www.open-mpi.org/projects/hwloc/)  is  a sub-project
+          of the OpenMPI project ([18]http://www.open-mpi.org/).
+
+   pthread
+          POSIX  threads  library  is  required to run PLASMA on Unix-like
+          systems.  It is a standard component of any such system. Windows
+          threads are used on Microsoft Windows systems.
+     __________________________________________________________________
+
+Getting Help
+
+   Please use the PLASMA Users' Forum
+   ([19]http://icl.cs.utk.edu/plasma/forum/)   to  get  help  with  PLASMA
+   installation.
+     __________________________________________________________________
+
+   Last updated 2013-07-04 02:44:32 MDT
+
+Références
+
+   1. file:///tmp/lynxXXXXsfYtS8/L13738-9459TMP.html#plasma_software_stack
+   2. file:///tmp/lynxXXXXsfYtS8/L13738-9459TMP.html#installation_options
+   3. http://www.open-mpi.org/projects/hwloc/
+   4. http://netlib.org/blas/blas.tgz
+   5. http://www.netlib.org/blas/blast-forum/cblas.tgz
+   6. http://www.netlib.org/lapack/lapack.tgz
+   7. http://icl.cs.utk.edu/projectsfiles/plasma/pubs/lapacke.tgz
+   8. http://icl.cs.utk.edu/projectsfiles/plasma/pubs/plasma.tar.gz
+   9. http://software.intel.com/en-us/articles/intel-mkl-link-line-advisor/
+  10. http://www.netlib.org/blas/
+  11. http://www.gnu.org/software/gsl/
+  12. http://www.netlib.org/blas/blast-forum/cblas.tgz
+  13. http://www.netlib.org/clapack/
+  14. http://www.netlib.org/f2c/
+  15. http://www.netlib.org/lapack/lapacke.tgz
+  16. http://icl.cs.utk.edu/projectsfiles/plasma/pubs/lapacke.tgz
+  17. http://www.open-mpi.org/projects/hwloc/
+  18. http://www.open-mpi.org/
+  19. http://icl.cs.utk.edu/plasma/forum/
