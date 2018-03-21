@@ -1,0 +1,40 @@
+author:
+Pawel Jan Zuk
+
+
+Copyright (C) 2017
+Pawel Jan Zuk
+
+
+This is only a short summary for more detailed information please refer to user guide.
+
+The file contains scripts that allow to create hydrated atom model of biomolecules in pdb file.
+This is NOT a standalone application and it REQUIRES an output file form MSMS program by Michel Sanner.
+
+Folder contains:
+    -> examples
+       folder with examples of input and output
+    -> pdb_to_xyzrn_mod
+       a slightly modified script pdb_to_xyzrn attached to MSMS program.
+       The modification alows to use it from various directories under bash shell
+    -> msmsVertNameTohydrAtom.py
+       a python 2.7 script to add hydration volume to surface atom list obtained from .vert
+       file resulting from execution of MSMS program
+    -> pdbToHydrAtom
+       a script with user editable part for the directory of MSMS executable and hydrAtom folder
+
+To run create the hydrated atom model
+    1) edit pdbToHydrAtom file and specify the directories to MSMS program and hydrAtom folder
+    2) run
+       <path to pdbToHydrAtom file> <path to <molecule>.pdb file>
+
+Remark
+   If additionally the header file for the GRPY input file ( <molecule>.header ) is present
+   in the folder containing <molecule>.pdb file an GRPY input file will be created.
+   For the purpose of example 
+   example/1znf.header
+   file is provided
+
+Example
+   execute from inside of hydrAtom folder
+   ./pdbToHydrAtom ./examples/1znf.pdb

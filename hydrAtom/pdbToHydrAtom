@@ -16,13 +16,13 @@
 
 # absolute path to folder containing msms
 # must be specified
-pathToMsmsFolder=/home/pawel/Pulpit/Wajnryb/msms
+pathToMsmsFolder=<path to MSMS folder>
 # msms executable name
 # must be specified
-msmsExec=msms.x86_64Linux2.2.6.1
+msmsExec=<name of MSMS executable file>
 # absolute path to hydrAtom folder containing pdb_to_xyzrn_mod file 
 # must be specified
-pathToHydrAtomFolder=/home/pawel/Pulpit/Wajnryb/biophysJournal/hydrAtom
+pathToHydrAtomFolder=<path to hydrAtom folder>
 
 # copy patched for remote folder execution pdb_to_xyzrn to msmsFolder
 if [ ! -f $pathToMsmsFolder"/pdb_to_xyzrn_mod" ]
