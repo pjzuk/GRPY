@@ -1,12 +1,4 @@
-author:
-Pawel Jan Zuk
-
-
-Copyright (C) 2017
-Pawel Jan Zuk
-
-
-This is only a short info about compliation and execution of GRPY program.
+This is short info about compliation and execution of GRPY program.
 For more detailed information please refer to the user manual.
 
 1) Compilation of single cpu version:
@@ -54,13 +46,13 @@ For more detailed information please refer to the user manual.
   i) single cpu version
 
     a) GRPY iput file
-        <path to GRPY executable> <path to input file>
+        ./GRPY <path to input file>
     
     b) hydro++ input file
-        <path to GRPY executable> -d <path to input control file>
+        ./GRPY -d <path to input control file>
 
     c) us-somo .bead_model file
-        <path to GRPY executable> -u <path to input file>
+        ./GRPY -u <path to input file>
 
   ii) On linux plasmaGRPY can be used to run the code in parallel.
       In order to do so a number of cores can be passed to the plasmaGRPY program with system variable CORE_NUM
@@ -69,13 +61,13 @@ For more detailed information please refer to the user manual.
       Then the program can be executed as
 
     a) GRPY iput file
-        <path to plasmaGRPY executable> <path to input file>
+        ./plasmaGRPY <path to input file>
     
     b) hydro++ input file
-        <path to plasmaGRPY executable> -d <path to input control file>
+        ./plasmaGRPY -d <path to input control file>
 
     c) us-somo .bead_model file
-        <path to plasmaGRPY executable> -u <path to input file>
+        ./plasmaGRPY -u <path to input file>
 
 4) REMARKS
   i) the prgram has a limited input file lenght thus it is most robust to execute it from the input file folder

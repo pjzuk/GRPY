@@ -530,8 +530,8 @@ C***********************************************************
      *          '[s]' // '       '
  
       WRITE(41,100) 'Sedimentation coefficient ' //
-     *           '(Mw Dlt (1/(vbar*rho)-1)/(nA kB T)):',
-     *          MW*(1.D0/(VBAR*RHO)-1.D0)*1.E+13/NA
+     *           '(Mw Dlt (1. - (vbar*rho))/(nA kB T)):',
+     *          MW*(1.D0 - (VBAR*RHO))*1.E+13/NA
      *        *((ATRCH(1,1)+ATRCH(2,2)+ATRCH(3,3))/3.D0)/(UNITS*PI*ETA),
      *          '[Svedberg]'
 
@@ -770,8 +770,8 @@ C***********************************************************
      *          '[s]' // '       '
 
       WRITE(*,100) 'Sedimentation coefficient ' //
-     *           '(Mw Dlt (1/(vbar*rho)-1)/(nA kB T)):',
-     *          MW*(1.D0/(VBAR*RHO)-1.D0)*1.E+13/NA
+     *           '(Mw Dlt (1. - (vbar*rho))/(nA kB T)):',
+     *          MW*(1.D0 - (VBAR*RHO))*1.E+13/NA
      *        *((ATRCH(1,1)+ATRCH(2,2)+ATRCH(3,3))/3.D0)/(UNITS*PI*ETA),
      *          '[Svedberg]'
 
