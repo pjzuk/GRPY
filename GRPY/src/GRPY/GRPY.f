@@ -51,6 +51,7 @@ C
       REAL*8, ALLOCATABLE :: CONF(:,:),A(:,:),RADII(:)
       CHARACTER COORDFILENAME*120,SETTINGSFILE*70,COORDFILE*150,FLAG*4
       CHARACTER PARTNAME*30,OUTPUTFILENAME*120,OUTPUTFILE*150,UTEMP*150
+      CHARACTER INPUTTYPE*10
       INTEGER NARG,I,J,SEED,UN,STAT,USINPUT
       REAL*8 EIV(3,3),EIVINV(3,3)
       REAL, PARAMETER :: PI = 3.1415925359
@@ -81,6 +82,8 @@ C
        ENDIF
 
        IF (TRIM(FLAG).EQ.'-d') THEN
+
+        INPUTTYPE="hydro++"
 
         OPEN(32,FILE=SETTINGSFILE)
         DO
@@ -165,13 +168,15 @@ C
          CALL CALCTAU(DTAU,TAU,DRR)
 
          CALL WRITEFILE(OUTPUTFILE,ATR,RR,ATRCH,RCH,UNITS,ETA,
-     *             TK,VBAR,RHO,RG2,MDD,BR,DTAU,TAU,MW,EIV)
+     *             TK,VBAR,RHO,RG2,MDD,BR,DTAU,TAU,MW,EIV,INPUTTYPE)
          DEALLOCATE(CONF,A,RADII,DIAM_SPH)
 
          WRITE(*,*) 'completed'
         ENDDO
        
        ELSE
+
+        INPUTTYPE='us-somo'
 
         OPEN(32,FILE=SETTINGSFILE)
 
@@ -231,13 +236,15 @@ C
         CALL CALCTAU(DTAU,TAU,DRR)
 
         CALL WRITESTDOUT(ATR,RR,ATRCH,RCH,UNITS,ETA,TK,VBAR,RHO,
-     *                      RG2,MDD,BR,DTAU,TAU,MW,EIV)
+     *                      RG2,MDD,BR,DTAU,TAU,MW,EIV,INPUTTYPE)
 
         DEALLOCATE(CONF,A,RADII,DIAM_SPH)
 
        ENDIF
 
       ELSEIF (NARG.EQ.1) THEN
+
+       INPUTTYPE='GRPY'
 
        CALL getarg(1,SETTINGSFILE)      
 
@@ -288,7 +295,7 @@ C
        CALL CALCTAU(DTAU,TAU,DRR)
 
        CALL WRITESTDOUT(ATR,RR,ATRCH,RCH,UNITS,ETA,TK,VBAR,RHO,
-     *                     RG2,MDD,BR,DTAU,TAU,MW,EIV)
+     *                     RG2,MDD,BR,DTAU,TAU,MW,EIV,INPUTTYPE)
 
        DEALLOCATE(CONF,A,RADII,DIAM_SPH)
 
@@ -449,11 +456,11 @@ C***********************************************************
 C***********************************************************
 
       SUBROUTINE WRITEFILE(OUTPUTFILE,ATR,RR,ATRCH,RCH,UNITS,ETA,
-     *           TK,VBAR,RHO,RG2,MDD,BR,DTAU,TAU,MW,EIV)
+     *           TK,VBAR,RHO,RG2,MDD,BR,DTAU,TAU,MW,EIV,INPUTTYPE)
       REAL*8 MDD,BR,UNITS,DTAU,RR(3),RCH(3),EIV(3,3)
       REAL*8 ATR(6,6),DTR(6,6),TAU(8),ATRCH(6,6)
       REAL*8 RG2,SI(3),DELTA,TK,ETA,MW,VBAR,RHO
-      CHARACTER OUTPUTFILE*150
+      CHARACTER OUTPUTFILE*150,INPUTTYPE*10
       REAL, PARAMETER :: PI = 3.1415925359
       REAL, PARAMETER :: KB = 1.38064852E-16
       REAL, PARAMETER :: NA = 6.022140858E+23
@@ -480,7 +487,7 @@ C***********************************************************
      *              'Rotne-Prager-Yamakwa method'
       WRITE(41,*)
 
-      WRITE(41,201) 'from the:','hydro++ input file'
+      WRITE(41,201) 'from the:', TRIM(INPUTTYPE)//' input file'
       WRITE(41,*) 
       WRITE(41,100) 'Radius of gyration:',
      *          SQRT(RG2)*UNITS,
@@ -691,10 +698,11 @@ C***********************************************************
 C***********************************************************
 
       SUBROUTINE WRITESTDOUT(ATR,RR,ATRCH,RCH,UNITS,ETA,TK,VBAR,RHO,
-     *                     RG2,MDD,BR,DTAU,TAU,MW,EIV)
+     *                     RG2,MDD,BR,DTAU,TAU,MW,EIV,INPUTTYPE)
       REAL*8 MDD,BR,UNITS,DTAU,RCH(3),RR(3),EIV(3,3)
       REAL*8 ATR(6,6),ATRCH(6,6),DTR(6,6),TAU(8)
       REAL*8 RG2,SI(3),DELTA,TK,ETA,MW,VBAR,RHO
+      CHARACTER INPUTTYPE*10
       REAL, PARAMETER :: PI = 3.1415925359
       REAL, PARAMETER :: KB = 1.38064852E-16
       REAL, PARAMETER :: NA = 6.022140858E+23
@@ -719,7 +727,7 @@ C***********************************************************
      *              'Rotne-Prager-Yamakwa method'
       WRITE(*,*)
 
-      WRITE(*,201) 'from the:',"GRPY input file"
+      WRITE(*,201) 'from the:', TRIM(INPUTTYPE)//' input file'
 
       WRITE(*,*) 
       WRITE(*,100) 'Radius of gyration:',
