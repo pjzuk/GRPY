@@ -482,9 +482,9 @@ C***********************************************************
       WRITE(41,*)
       WRITE(41,202) 'GRPY program'
       WRITE(41,*)
-      WRITE(41,200) 'The hydrodynamic properties of particle'
+      WRITE(41,200) 'Hydrodynamic properties of the macromolecule'
       WRITE(41,200) 'based on the Generalized ' //
-     *              'Rotne-Prager-Yamakwa method'
+     *              'Rotne-Prager-Yamakawa method'
       WRITE(41,*)
 
       WRITE(41,201) 'from the:', TRIM(INPUTTYPE)//' input file'
@@ -496,7 +496,8 @@ C***********************************************************
      *          DTAU
      *          *(KB*TK)/((UNITS**3)*PI*ETA),
      *          '[s^-1]' // '    '
-      WRITE(41,100) 'Rotational relaxation time for rank 1 tensor:'
+      WRITE(41,100) 'Rotational relaxation times associated with'
+      WRITE(41,100) 'the Brownian relaxation of a vector:'
       WRITE(41,100) '-> Relaxation time (1):',
      *          TAU(6)
      *          * ((UNITS**3)*PI*ETA)/(KB*TK),
@@ -509,7 +510,9 @@ C***********************************************************
      *          TAU(8)
      *          * ((UNITS**3)*PI*ETA)/(KB*TK),
      *          '[s]' // '       '
-      WRITE(41,100) 'Rotational relaxation time for rank 2 tensor:'
+      WRITE(41,100) 'Rotational relaxation times associated with'
+      WRITE(41,100) 'the Brownian relaxation of'
+     *              // ' a traceless symmetric tensor:'
       WRITE(41,100) '-> Relaxation time (1):',
      *          TAU(1)
      *          * ((UNITS**3)*PI*ETA)/(KB*TK),
@@ -544,18 +547,18 @@ C***********************************************************
 
       WRITE(41,*)
 
-      WRITE(41,100) 'Non Brownian intrinsic viscosity:',
+      WRITE(41,100) 'High frequency intrinsic viscosity eta oo:',
      *          MDD
      *          * PI*NA/MW*(UNITS**3),
      *          '[cm^3/g]' // '  '
-      WRITE(41,100) 'Brownian intrinsic viscosity:',
+      WRITE(41,100) 'Zero frequency intrinsic viscosity eta 0:',
      *          (MDD + BR)
      *          * PI*NA/MW*(UNITS**3),
      *          '[cm^3/g]' // '  '
 
       WRITE(41,*)
       WRITE(41,102) ' calculated using the origin',''
-      WRITE(41,102) ' of the coordiante system:',''
+      WRITE(41,102) ' of the coordinate system:',''
       WRITE(41,105) 0.D0,0.D0,0.D0
       WRITE(41,102) ' as the reference point',''
       WRITE(41,102) ' in the standard reference frame:',''
@@ -647,7 +650,8 @@ C***********************************************************
        WRITE(41,100) 'Rotational diffusion coefficient:',
      *          UNITS/((8.D0 * DTAU)**(1.D0/3.D0)),
      *          '[cm]' // '      '
-       WRITE(41,100) 'Rotational relaxation time for rank 1 tensor:'
+      WRITE(41,100) 'Rotational relaxation times associated with'
+      WRITE(41,100) 'the Brownian relaxation of a vector:'
        WRITE(41,100) '-> Relaxation time (1):',
      *          UNITS*((6.D0*TAU(6)/(8.D0))**(1.D0/3.D0)),
      *          '[cm]' // '      '
@@ -657,7 +661,9 @@ C***********************************************************
        WRITE(41,100) '-> Relaxation time (3):',
      *          UNITS*((6.D0*TAU(8)/(8.D0))**(1.D0/3.D0)),
      *          '[cm]' // '      '
-       WRITE(41,100) 'Rotational relaxation time for rank 2 tensor:'
+      WRITE(41,100) 'Rotational relaxation times associated with'
+      WRITE(41,100) 'the Brownian relaxation of'
+     *              // ' a traceless symmetric tensor:'
        WRITE(41,100) '-> Relaxation time (1):',
      *          UNITS*((6.D0*TAU(1)/(8.D0))**(1.D0/3.D0)),
      *          '[cm]' // '      '
@@ -679,10 +685,10 @@ C***********************************************************
      *           + 1.D0/TAU(4) + 1.D0/TAU(5))
      *          /(8.D0))**(1.D0/3.D0)),
      *          '[cm]' // '      '
-       WRITE(41,100) 'Intrinsic viscosity (non Brownian):',
+       WRITE(41,100) 'High frequency intrinsic viscosity eta oo:',
      *          (3.D0/10.D0 * MDD )**(1.D0/3.D0)*UNITS,
      *          '[cm]' // '      '
-       WRITE(41,100) 'Intrinsic viscosity (Brownian):',
+       WRITE(41,100) 'Zero frequency intrinsic viscosity eta 0:',
      *          (3.D0/10.D0 * (MDD+BR) )**(1.D0/3.D0)*UNITS,
      *          '[cm]' // '      '
 
@@ -722,13 +728,12 @@ C***********************************************************
       WRITE(*,*)
       WRITE(*,202) 'GRPY program'
       WRITE(*,*)
-      WRITE(*,200) 'The hydrodynamic properties of particle'
-      WRITE(*,200)  'based on the Generalized ' //
-     *              'Rotne-Prager-Yamakwa method'
+      WRITE(*,200) 'Hydrodynamic properties of the macromolecule'
+      WRITE(*,200) 'based on the Generalized ' //
+     *              'Rotne-Prager-Yamakawa method'
       WRITE(*,*)
 
       WRITE(*,201) 'from the:', TRIM(INPUTTYPE)//' input file'
-
       WRITE(*,*) 
       WRITE(*,100) 'Radius of gyration:',
      *          SQRT(RG2)*UNITS,
@@ -737,7 +742,8 @@ C***********************************************************
      *          DTAU
      *          *(KB*TK)/((UNITS**3)*PI*ETA),
      *          '[s^-1]' // '    '
-      WRITE(*,100) 'Rotational relaxation time for rank 1 tensor:'
+      WRITE(*,100) 'Rotational relaxation times associated with'
+      WRITE(*,100) 'the Brownian relaxation of a vector:'
       WRITE(*,100) '-> Relaxation time (1):',
      *          TAU(6)
      *          * ((UNITS**3)*PI*ETA)/(KB*TK),
@@ -750,7 +756,9 @@ C***********************************************************
      *          TAU(8)
      *          * ((UNITS**3)*PI*ETA)/(KB*TK),
      *          '[s]' // '       '
-      WRITE(*,100) 'Rotational relaxation time for rank 2 tensor:'
+      WRITE(*,100) 'Rotational relaxation times associated with'
+      WRITE(*,100) 'the Brownian relaxation of'
+     *              // ' a traceless symmetric tensor:'
       WRITE(*,100) '-> Relaxation time (1):',
      *          TAU(1)
      *          * ((UNITS**3)*PI*ETA)/(KB*TK),
@@ -776,7 +784,7 @@ C***********************************************************
      *           + 1.D0/TAU(4) + 1.D0/TAU(5))
      *          * ((UNITS**3)*PI*ETA)/(KB*TK),
      *          '[s]' // '       '
-
+ 
       WRITE(*,100) 'Sedimentation coefficient ' //
      *           '(Mw Dlt (1. - (vbar*rho))/(nA kB T)):',
      *          MW*(1.D0 - (VBAR*RHO))*1.E+13/NA
@@ -785,18 +793,18 @@ C***********************************************************
 
       WRITE(*,*)
 
-      WRITE(*,100) 'Non Brownian intrinsic viscosity:',
+      WRITE(*,100) 'High frequency intrinsic viscosity eta oo:',
      *          MDD
      *          * PI*NA/MW*(UNITS**3),
      *          '[cm^3/g]' // '  '
-      WRITE(*,100) 'Brownian intrinsic viscosity:',
+      WRITE(*,100) 'Zero frequency intrinsic viscosity eta 0:',
      *          (MDD + BR)
      *          * PI*NA/MW*(UNITS**3),
      *          '[cm^3/g]' // '  '
 
       WRITE(*,*)
       WRITE(*,102) ' calculated using the origin',''
-      WRITE(*,102) ' of the coordiante system:',''
+      WRITE(*,102) ' of the coordinate system:',''
       WRITE(*,105) 0.D0,0.D0,0.D0
       WRITE(*,102) ' as the reference point',''
       WRITE(*,102) ' in the standard reference frame:',''
@@ -888,7 +896,8 @@ C***********************************************************
        WRITE(*,100) 'Rotational diffusion coefficient:',
      *          UNITS/((8.D0 * DTAU)**(1.D0/3.D0)),
      *          '[cm]' // '      '
-       WRITE(*,100) 'Rotational relaxation time for rank 1 tensor:'
+      WRITE(*,100) 'Rotational relaxation times associated with'
+      WRITE(*,100) 'the Brownian relaxation of a vector:'
        WRITE(*,100) '-> Relaxation time (1):',
      *          UNITS*((6.D0*TAU(6)/(8.D0))**(1.D0/3.D0)),
      *          '[cm]' // '      '
@@ -898,7 +907,9 @@ C***********************************************************
        WRITE(*,100) '-> Relaxation time (3):',
      *          UNITS*((6.D0*TAU(8)/(8.D0))**(1.D0/3.D0)),
      *          '[cm]' // '      '
-       WRITE(*,100) 'Rotational relaxation time for rank 2 tensor:'
+      WRITE(*,100) 'Rotational relaxation times associated with'
+      WRITE(*,100) 'the Brownian relaxation of'
+     *              // ' a traceless symmetric tensor:'
        WRITE(*,100) '-> Relaxation time (1):',
      *          UNITS*((6.D0*TAU(1)/(8.D0))**(1.D0/3.D0)),
      *          '[cm]' // '      '
@@ -920,10 +931,10 @@ C***********************************************************
      *           + 1.D0/TAU(4) + 1.D0/TAU(5))
      *          /(8.D0))**(1.D0/3.D0)),
      *          '[cm]' // '      '
-       WRITE(*,100) 'Intrinsic viscosity (non Brownian):',
+       WRITE(*,100) 'High frequency intrinsic viscosity eta oo:',
      *          (3.D0/10.D0 * MDD )**(1.D0/3.D0)*UNITS,
      *          '[cm]' // '      '
-       WRITE(*,100) 'Intrinsic viscosity (Brownian):',
+       WRITE(*,100) 'Zero frequency intrinsic viscosity eta 0:',
      *          (3.D0/10.D0 * (MDD+BR) )**(1.D0/3.D0)*UNITS,
      *          '[cm]' // '      '
 
