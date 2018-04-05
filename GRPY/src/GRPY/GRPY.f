@@ -489,9 +489,6 @@ C***********************************************************
 
       WRITE(41,201) 'from the:', TRIM(INPUTTYPE)//' input file'
       WRITE(41,*) 
-      WRITE(41,100) 'Radius of gyration:',
-     *          SQRT(RG2)*UNITS,
-     *          '[cm]' // '      '
       WRITE(41,100) 'Rotational diffusion coefficient:',
      *          DTAU
      *          *(KB*TK)/((UNITS**3)*PI*ETA),
@@ -735,9 +732,6 @@ C***********************************************************
 
       WRITE(*,201) 'from the:', TRIM(INPUTTYPE)//' input file'
       WRITE(*,*) 
-      WRITE(*,100) 'Radius of gyration:',
-     *          SQRT(RG2)*UNITS,
-     *          '[cm]' // '      '
       WRITE(*,100) 'Rotational diffusion coefficient:',
      *          DTAU
      *          *(KB*TK)/((UNITS**3)*PI*ETA),
