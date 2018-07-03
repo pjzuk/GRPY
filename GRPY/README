@@ -1,4 +1,4 @@
-This is short info about compliation and execution of GRPY program.
+This is short info about compilation and execution of GRPY program.
 For more detailed information please refer to the user manual.
 
 1) Compilation of single cpu version:
@@ -27,6 +27,8 @@ For more detailed information please refer to the user manual.
      a) provide PLASMA library. 
          It can be installed from included ThirdParty folder
          Best performance is achieved with machine optimised PLAMSA library (please refer to PLASMA library README file).
+         However the reasonably good performance is achieved with default libraries installed by PLASMA installer,
+         the parallelization does not need optimization to work.
          The library can be installed from scratch with reference components by executing
              cd ThirdParty/ThirdParty/plasma-installer_2.8.0
              ./setup.py --cc=gcc --fc=gfortran --downblas
@@ -70,5 +72,5 @@ For more detailed information please refer to the user manual.
         ./plasmaGRPY -u <path to input file>
 
 4) REMARKS
-  i) the prgram has a limited input file lenght thus it is most robust to execute it from the input file folder
+  i) the program has a limited input file length thus it is most robust to execute it from the input file folder
 

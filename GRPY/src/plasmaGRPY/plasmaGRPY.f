@@ -170,9 +170,7 @@ C
          CALL CALCRCH(ATR,RCH)
          RCH = RR + RCH
 
-         CALL HYDRO(A,AR,CONF,RCH)
-
-         CALL CALCATRCH(ATRCH,AR,EIV,DRR)
+         CALL CALCATRCH(ATRCH,AR,EIV,DRR,RCH)
 
          CALL CALCTAU(DTAU,TAU,DRR)
 
@@ -238,9 +236,7 @@ C
         CALL CALCRCH(ATR,RCH)
         RCH = RR + RCH
 
-        CALL HYDRO(A,AR,CONF,RCH)
-
-        CALL CALCATRCH(ATRCH,AR,EIV,DRR)
+        CALL CALCATRCH(ATRCH,AR,EIV,DRR,RCH)
         
         CALL CALCTAU(DTAU,TAU,DRR)
 
@@ -297,9 +293,7 @@ C
        CALL CALCRCH(ATR,RCH)
        RCH = RR + RCH
 
-       CALL HYDRO(A,AR,CONF,RCH)
-
-       CALL CALCATRCH(ATRCH,AR,EIV,DRR)
+       CALL CALCATRCH(ATRCH,AR,EIV,DRR,RCH)
        
        CALL CALCTAU(DTAU,TAU,DRR)
 
@@ -409,13 +403,56 @@ C***********************************************************
 C***********************************************************
 C***********************************************************
 
-      SUBROUTINE CALCATRCH(ATRCH,AR,EIV,DRR)
+      SUBROUTINE CALCATRCH(ATRCH,AR,EIV,DRR,RCH)
       IMPLICIT NONE
 
-      REAL*8 EIV(3,3),EIVINV(3,3),ARR(3,3),ATRCH(6,6),DRR(3),AR(11,11)
+      REAL*8 EIV(3,3),EIVINV(3,3),ARR(3,3),ATRCH(6,6),DRR(3)
+      REAL*8 AR(11,11),RCH(3),EIJK(3,3,3),TMP(6,6,2)
+      INTEGER I,J,K,L,N,M
+
+      EIJK=0.D0
+      EIJK(1,2,3)= 1.D0 
+      EIJK(1,3,2)=-1.D0
+      EIJK(2,3,1)= 1.D0
+      EIJK(2,1,3)=-1.D0
+      EIJK(3,1,2)= 1.D0
+      EIJK(3,2,1)=-1.D0
 
       ATRCH = AR(1:6,1:6)
       CALL MATREV(ATRCH,6,'M')
+
+
+      ATRCH=ATRCH
+      TMP=0.D0
+      TMP(:,:,1)=ATRCH
+      DO L=1,3
+       DO I=1,3 
+        DO J=1,3
+         DO K=1,3
+          DO M=1,3
+           DO N=1,3
+          TMP(L,I,2) = TMP(L,I,2) 
+     *               + RCH(K)*EIJK(L,K,M)
+     *               * TMP(3+M,3+N,1)
+     *               * RCH(J)*EIJK(I,N,J)
+           ENDDO
+          ENDDO
+          TMP(3+I,L,2) = TMP(3+I,L,2) 
+     *          + RCH(J)*TMP(3+K,L,1)*EIJK(I,J,K)
+          TMP(L,3+I,2) = TMP(L,3+I,2) 
+     *                 + TMP(L,3+J,1)*RCH(K)*EIJK(I,J,K)
+          TMP(3+L,3+I,2) = TMP(3+L,3+I,2) 
+     *                   + TMP(3+L,3+J,1)*RCH(K)*EIJK(I,J,K)
+         ENDDO
+        ENDDO
+       ENDDO
+      ENDDO
+
+      ATRCH(1:3,1:3) = ATRCH(1:3,1:3) - TMP(1:3,1:3,2)
+     *          - TMP(4:6,1:3,2) + TMP(1:3,4:6,2)
+
+      ATRCH(4:6,1:3) = ATRCH(4:6,1:3) + TMP(4:6,4:6,2)
+      ATRCH(1:3,4:6) = TRANSPOSE(ATRCH(4:6,1:3))
 
       ARR = ATRCH(4:6,4:6)
       EIV = ARR
@@ -429,6 +466,7 @@ C***********************************************************
       ATRCH(1:3,4:6) = MATMUL(EIVINV,MATMUL(ARR,EIV))
       ARR = ATRCH(4:6,1:3)
       ATRCH(4:6,1:3) = MATMUL(EIVINV,MATMUL(ARR,EIV))
+
 
       RETURN
       END

@@ -16,7 +16,7 @@ Folder contains:
        folder with examples of input and output
     -> pdb_to_xyzrn_mod
        a slightly modified script pdb_to_xyzrn attached to MSMS program.
-       The modification alows to use it from various directories under bash shell
+       The modification allows to use it from various directories under bash shell
     -> msmsVertNameTohydrAtom.py
        a python 2.7 script to add hydration volume to surface atom list obtained from .vert
        file resulting from execution of MSMS program
@@ -31,7 +31,7 @@ To run create the hydrated atom model
 Remark
    If additionally the header file for the GRPY input file ( <molecule>.header ) is present
    in the folder containing <molecule>.pdb file an GRPY input file will be created.
-   For the purpose of example 
+   As an example 
    example/1znf.header
    file is provided
 

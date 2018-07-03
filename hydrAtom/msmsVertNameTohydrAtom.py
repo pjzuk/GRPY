@@ -1,29 +1,30 @@
 from pylab import *
 from scipy import *
-from sys import argv
+import sys
+
 
                 # polar + ionic residues of aminoacid by Knutz 1974
 
-dictWaters = {'ALA': 1 + 1,
+dictWaters = {'ALA': 1,
               'CYS': 0, 
-              'ASP': 2 + 6, 
-              'GLU': 2 + 7,
+              'ASP': 6,   #ionic
+              'GLU': 7,   #ionic
               'PHE': 0, 
-              'GLY': 1 + 1,
-              'HIS': 4, 
+              'GLY': 1,   
+              'HIS': 4,   #ionic
               'ILE': 1, 
-              'LYS': 4 + 4,
+              'LYS': 4,   #ionic
               'LEU': 1, 
               'MET': 1, 
               'ASN': 2, 
               'PRO': 3, 
               'GLN': 2, 
-              'ARG': 3 + 3,
+              'ARG': 3,   #ionic
               'SER': 2, 
               'THR': 2, 
               'VAL': 1, 
               'TRP': 2, 
-              'TYR': 3 + 7,
+              'TYR': 3,   #polar
               'PCA': 0, 
               'GAL': 3, 
               'MAN': 3, 
@@ -33,7 +34,6 @@ dictWaters = {'ALA': 1 + 1,
               'OG1': 3, 
               'OG2': 0, 
               'OG3': 0, 
-              'PEP': 1, 
               'OXT': 5}
 
 volH2O = 24 # A^3 is water partcile volume by Gerstein and Chotia 1996
@@ -41,7 +41,7 @@ volH2O = 24 # A^3 is water partcile volume by Gerstein and Chotia 1996
 # program takes as an argument msms program file .vert calculated from .xyzrn file (including atom names)
 # both should be in the same folder
 
-for fname in argv[1:]:
+for fname in sys.argv[1:]:
 
     msmsFile = open(fname,'r')
     line = msmsFile.readline()
@@ -86,6 +86,8 @@ for fname in argv[1:]:
             residue=[]
             residue.append(atom)
     residueList.append(residue)
+
+    totalHydrationVolume = 0
         
     for residue in residueList:
         atomCount=len(residue)
@@ -95,12 +97,17 @@ for fname in argv[1:]:
                 totalVolume += 4./3.*pi*(atom[3]**3)
             try:
                 hydrationVolume=volH2O*dictWaters[atom[5]]
+                totalHydrationVolume+=hydrationVolume
             except:
-                print atom[5],'not in dictionary'
+                sys.stderr.write('h-atom warning: '+str(atom[5])+' not in dictionary\n')
+                sys.stderr.write('                 atoms in this residue did not recieve hydration layer\n')
                 hydrationVolume = 0
             unitHydrationVolume = hydrationVolume/atomCount
             for atom in residue:
-                atom[3] = ((atom[3]**3) + 2.*unitHydrationVolume/(4./3.*pi))**(1./3.) #the two stands for the half of an atom on average is covered with water
+                atom[3] = ((atom[3]**3) + 3.1875*unitHydrationVolume/(4./3.*pi))**(1./3.) #the coefficients comes from the hydrated atom overlap.
+                                                                                         #It was calculated to obtain increased volume of particle in agreement with Knutz 1974
                 print atom[0],atom[1],atom[2],atom[3]
 
+    sys.stderr.write('h-atom info: total hydration volume '+str(totalHydrationVolume)+' A^3\n')
+   
     xyzrFile.close()

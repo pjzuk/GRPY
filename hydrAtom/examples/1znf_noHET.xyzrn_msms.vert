@@ -1,4 +1,4 @@
-# MSMS solvent excluded surface vertices for examples/1znf_noHET.xyzrn
+# MSMS solvent excluded surface vertices for 1znf_noHET.xyzrn
 #vertex #sphere density probe_r
    2645     414  1.00  1.40
   -12.713    -1.514     5.210    -0.019    -0.990     0.141       0     404  2 O_ASN_25
