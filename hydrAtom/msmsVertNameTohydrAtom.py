@@ -104,7 +104,7 @@ for fname in sys.argv[1:]:
                 hydrationVolume = 0
             unitHydrationVolume = hydrationVolume/atomCount
             for atom in residue:
-                atom[3] = ((atom[3]**3) + 3.1875*unitHydrationVolume/(4./3.*pi))**(1./3.) #the coefficients comes from the hydrated atom overlap.
+                atom[3] = ((atom[3]**3) + 6.375*unitHydrationVolume/(4./3.*pi))**(1./3.) #the coefficients comes from the hydrated atom overlap.
                                                                                          #It was calculated to obtain increased volume of particle in agreement with Knutz 1974
                 print atom[0],atom[1],atom[2],atom[3]
 
