@@ -1,0 +1,55 @@
+ COALESCE PROCESS RESULTS -Version=    3.5000000000000000     
+  
+ Input File (Sanner): best_1ubq_msms.face                                                             
+  Edge fraction =   0.83219944207675933     
+  
+  Beginning polygon Area =     4019.1523428928417     
+ Initial number of triangle records=         7970
+ Number of degenerate triangles, pass 1=            0
+ Number of small triangles deleted, pass 1=         3318
+ Number of polygons generated, pass 1=         4652
+ total area, pass 1 =    4013.8776391041147     
+  
+ Number of small triangles deleted, pass 2=         2376
+ Number of polygons generated, pass 2=         2276
+ total area, pass 2 =    3926.9216764606272     
+ Average Triangle Area (A^2)=    1.7253610177770771     
+ Average edgelength (A)=    1.4844319751570487     
+ Cut-off length (A) =    1.2353434615265979     
+ Found          16  slender obtuse triangles,           processed          16
+  
+ Histogram bins and count follows:
+ Area distribution around  0.17253610177770773       A^2
+   0.0000000000000000                0
+   3.4507220355541546E-002           0
+   6.9014440711083092E-002           0
+  0.10352166106662464                0
+  0.13802888142216618                0
+  0.17253610177770773                0
+  0.20704332213324927                0
+  0.24155054248879082                0
+  0.27605776284433237                0
+  0.31056498319987391                0
+  0.34507220355541546                0
+ Area distribution around   1.7253610177770771      A^2
+  0.34507220355541546            32699
+  0.48310108497758142       -178969006
+  0.62112996639974760            32716
+  0.75915884782191390              121
+  0.89718772924407997              296
+   1.0352166106662462       -194057966
+   1.1732454920884123            33305
+   1.3112743735105785       -176949395
+   1.4493032549327447            33291
+   1.5873321363549109          5790151
+   1.7253610177770771            33213
+   1.8633898991992432          5789500
+   2.0014187806214094            33109
+   2.1394476620435756       -178970396
+   2.2774765434657418            32913
+   2.4155054248879080              178
+   2.5535343063100742              164
+   2.6915631877322403       -182308853
+   2.8295920691544065            32796
+   2.9676209505765727       -182343935
+   3.1056498319987389            33025

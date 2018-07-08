@@ -1,0 +1,73 @@
+      ------------------------------------------------------------
+                 HYDROPRO, Version 10, September 2011   
+              A. Ortega, D. Amoros, J. Garcia de la Torre, 
+      "Prediction of hydrodynamic and other solution properties of 
+          rigid proteins from atomic- and residue-level models" 
+                Biophys. J. 101, 892-898 (2011). 
+      ------------------------------------------------------------
+
+
+                          SUMMARY OF DATA AND RESULTS
+  
+                            This file : 1znf-res.txt                  
+                                 Case : 1znf                          
+                      Structural file : 1znf.pdb                      
+  
+  Radius of elements in primary model : 2.90 Angs.
+         Type of hydropro calculation : 1
+  
+                           Temperature:  20.0 centigrade
+                     Solvent viscosity:  0.01000 poise
+                      Molecular weight:     2958. Da
+        Solute partial specific volume: 0.722 cm^3/g
+                      Solution density: 1.000 g/cm^3
+  
+   Translational diffusion coefficient:  1.721E-06 cm^2/s
+                    Radius of gyration:  9.232E-08 cm
+                                Volume:  5.580E-21 cm^3
+      Rotational diffusion coefficient:  8.474E+07 s^-1
+                   Relaxation time (1):  2.423E-09 s
+                   Relaxation time (2):  2.309E-09 s
+                   Relaxation time (3):  2.318E-09 s
+                   Relaxation time (4):  2.027E-09 s
+                   Relaxation time (5):  2.031E-09 s
+      Harmonic mean (correlation) time:  2.209E-09 s
+                   Intrinsic viscosity:  4.291E+00 cm^3/g
+             Sedimentation coefficient:  5.807E-01 Svedberg
+  
+
+
+               Center of diffusion (x):  1.526E-07 cm
+               Center of diffusion (x):  1.418E-07 cm
+               Center of diffusion (x):  1.071E-07 cm
+
+           Generalized (6x6) diffusion matrix:  (Dtt  Dtr)
+
+                                                (Drt  Drr)
+
+
+  1.840E-06 -9.856E-09 -2.822E-08     1.575E-02 -3.826E-02  5.947E-02
+ -9.845E-09  1.750E-06 -1.732E-08    -3.825E-02 -8.226E-02  3.303E-02
+ -2.823E-08 -1.730E-08  1.705E-06     5.938E-02  3.294E-02  5.908E-02
+
+
+  1.575E-02 -3.825E-02  5.938E-02     1.005E+08  1.040E+06 -3.102E+06
+ -3.826E-02 -8.226E-02  3.294E-02     1.040E+06  7.825E+07 -3.149E+05
+  5.947E-02  3.303E-02  5.908E-02    -3.103E+06 -3.147E+05  7.544E+07
+
+                        List of equivalent radii
+
+                         Translational:  1.247E-07
+                             Gyration :  1.192E-07
+                               Volume :  1.100E-07
+                          Rotation (1):  1.328E-07
+                          Rotation (2):  1.307E-07
+                          Rotation (3):  1.308E-07
+                          Rotation (4):  1.251E-07
+                          Rotation (5):  1.252E-07
+                          Rotation (h):  1.259E-07
+                   Intrinsic viscosity:  1.262E-07
+                      Longest distance:  1.636E-07
+  
+                     Longest distance :  3.271E-07 cm
+

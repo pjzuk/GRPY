@@ -1,0 +1,55 @@
+ COALESCE PROCESS RESULTS -Version=    3.5000000000000000     
+  
+ Input File (Sanner): best_dim2gd1_msms.face                                                          
+  Edge fraction =    1.1616964394629867     
+  
+  Beginning polygon Area =     34761.780923403741     
+ Initial number of triangle records=        69552
+ Number of degenerate triangles, pass 1=            0
+ Number of small triangles deleted, pass 1=        50922
+ Number of polygons generated, pass 1=        18630
+ total area, pass 1 =    34007.374430556236     
+  
+ Number of small triangles deleted, pass 2=        14022
+ Number of polygons generated, pass 2=         4608
+ total area, pass 2 =    31863.225702322514     
+ Average Triangle Area (A^2)=    6.9147625222054065     
+ Average edgelength (A)=    2.1955191437273269     
+ Cut-off length (A) =    2.5505267720408615     
+ Found          23  slender obtuse triangles,           processed          23
+  
+ Histogram bins and count follows:
+ Area distribution around  0.69147625222054065       A^2
+   0.0000000000000000                0
+  0.13829525044410818                0
+  0.27659050088821624                0
+  0.41488575133232442                0
+  0.55318100177643248                0
+  0.69147625222054065                0
+  0.82977150266464883                0
+  0.96806675310875689                0
+   1.1063620035528650                0
+   1.2446572539969731                0
+   1.3829525044410813                0
+ Area distribution around   6.9147625222054065      A^2
+   1.3829525044410813            32550
+   1.9361335062175131       1074570992
+   2.4893145079939467            32592
+   3.0424955097703785       1074575256
+   3.5956765115468108            32971
+   4.1488575133232439       1089665351
+   4.7020385150996766            33590
+   5.2552195168761084             1235
+   5.8084005186525420             1234
+   6.3615815204289738       1074577345
+   6.9147625222054065            33490
+   7.4679435239818392       1091684361
+   8.0211245257582711            33206
+   8.5743055275347047      -1358869127
+   9.1274865293111365            33201
+   9.6806675310875683      -1358869308
+   10.233848532864002            33054
+   10.787029534640435       1089663180
+   11.340210536416865            32723
+   11.893391538193299              157
+   12.446572539969733              495

@@ -1,0 +1,55 @@
+ COALESCE PROCESS RESULTS -Version=    3.5000000000000000     
+  
+ Input File (Sanner): best_dim5ldh_msms.face                                                          
+  Edge fraction =    1.0946098641231758     
+  
+  Beginning polygon Area =     32528.668004175946     
+ Initial number of triangle records=        67460
+ Number of degenerate triangles, pass 1=            0
+ Number of small triangles deleted, pass 1=        46936
+ Number of polygons generated, pass 1=        20524
+ total area, pass 1 =    31969.019722835706     
+  
+ Number of small triangles deleted, pass 2=        14756
+ Number of polygons generated, pass 2=         5768
+ total area, pass 2 =    30111.831642567842     
+ Average Triangle Area (A^2)=    5.2204978575880450     
+ Average edgelength (A)=    2.0312296760273969     
+ Cut-off length (A) =    2.2234040396793118     
+ Found          29  slender obtuse triangles,           processed          29
+  
+ Histogram bins and count follows:
+ Area distribution around  0.52204978575880456       A^2
+   0.0000000000000000                0
+  0.10440995715176093                0
+  0.20881991430352187                0
+  0.31322987145528275                0
+  0.41763982860704363                0
+  0.52204978575880456                0
+  0.62645974291056550                0
+  0.73086970006232632                0
+  0.83527965721408726                0
+  0.93968961436584819                0
+   1.0440995715176091                0
+ Area distribution around   5.2204978575880450      A^2
+   1.0440995715176093            32744
+   1.4617394001246526       -343914921
+   1.8793792287316959            32827
+   2.2970190573387397              323
+   2.7146588859457830              825
+   3.1322987145528272       -359002842
+   3.5499385431598705            34663
+   3.9675783717669137       -341893818
+   4.3852182003739575            34865
+   4.8028580289810012       1754359125
+   5.2204978575880450            34481
+   5.6381376861950887       1754356502
+   6.0557775148021324            33978
+   6.4734173434091762       -343915554
+   6.8910571720162199            33572
+   7.3086970006232628              708
+   7.7263368292303074              553
+   8.1439766578373494       -347254499
+   8.5616164864443931            33098
+   8.9792563150514368       -347289677
+   9.3968961436584806            33670

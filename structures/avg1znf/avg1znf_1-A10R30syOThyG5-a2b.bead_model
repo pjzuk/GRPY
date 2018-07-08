@@ -1,0 +1,81 @@
+20	0.695
+-13.2680	1.9499	2.5406	1.7207	101.110001	8	RES.MC.A.	53.4212
+-12.5092	-0.1010	7.0016	2.2420	58.060001	8	RES.MC.A.	137.9628
+-12.2485	6.9189	-1.8071	2.6013	30.049999	8	RES.MC.A.	151.5483
+-6.1013	-5.5200	3.6159	1.8057	29.070000	8	RES.MC.A.	130.9985
+-11.4423	0.4795	-1.5122	2.9368	360.469940	8	RES.MC.A.	190.9827
+-9.6323	-0.5280	8.0333	0.8420	16.000000	8	RES.MC.A.	28.7968
+-7.2256	7.6403	-2.0567	2.4553	84.139999	8	RES.MC.A.	145.4214
+1.5604	-13.4363	3.9545	2.0294	45.020000	8	RES.MC.A.	94.4454
+-1.6896	-6.5268	-7.4135	2.7119	56.079998	8	RES.MC.A.	192.5351
+-0.6522	-10.8818	0.2039	2.9782	396.519989	8	RES.MC.A.	192.4292
+-4.0814	2.5122	-9.0784	2.0193	74.110001	8	RES.MC.A.	94.5820
+-0.3875	1.8859	-5.1602	3.3815	807.280273	8	RES.MC.A.	112.2199
+-1.6326	6.8318	-5.9959	1.2437	29.049999	8	RES.MC.A.	42.5866
+1.1890	8.6612	-0.2935	3.3977	216.240005	8	RES.MC.A.	229.3550
+7.6254	-9.0136	0.6256	3.4074	89.150002	8	RES.MC.A.	276.6836
+11.5912	0.6026	1.2064	3.0405	464.579987	8	RES.MC.A.	111.2841
+8.0296	3.6225	7.9132	2.2500	57.099998	8	RES.MC.A.	120.8747
+8.9078	8.3162	-2.0007	3.7143	91.080002	8	RES.MC.A.	288.1102
+12.3803	1.3741	-2.8780	1.1827	59.100002	8	RES.MC.A.	58.0750
+11.7424	2.7630	6.3453	1.8387	17.010000	8	RES.MC.A.	68.4769
+
+Field contents:
+  Line 1: Number of beads, Global partial specific volume
+  From line 2 on: X, Y, Z coordinates, Radius, Mass, Color coding, Correspondence with original residues, ASA
+
+Bead Model Output:
+  Sequence:                   as in original PDB file
+
+Model scale (10^-x m) (10 = Angstrom, 9 = nanometer), where x is : 10
+Grid model built with the following options:
+ASA Calculation:
+  Perform ASA Calculation:    On
+  Recheck Bead ASA:           On
+  ASA Method:                 Rolling Sphere
+  ASA Probe Radius (A):       1.40
+  Probe Recheck Radius (A):   1.40
+  Grid ASA Threshold (A^2):   10.0
+  Grid Bead ASA Threshold %:  30.0
+  ASAB1 Step Size (A):        1.0
+
+Grid Functions (AtoB):
+  Computations Relative to:             Center of Cubelet
+  Cube Side (Angstrom):                 5.0
+  Apply Cubic Grid:                     On
+  Add theoretical hydration (PDB only): On
+  Expand Beads to Tangency:             Off
+  Enable ASA options:                   On
+
+Grid (AtoB) Overlap Reduction:
+  Bead Overlap Tolerance:     0.001000
+    Exposed beads:
+      Fuse Beads:                                 Off
+      Fuse Beads that overlap by more than:       0.0
+      Remove Overlaps:                            On
+      Remove Overlaps synchronously:              On
+      Synchronous Overlap Reduction Step Size %:  1.0
+      Remove Overlaps hierarchically:             Off
+      Hierarchical Overlap Reduction Step Size %: 1.0
+      Outward Translation:                        On
+
+    Buried beads:
+      Fuse Beads:                                 Off
+      Fuse Beads that overlap by more than:       0.0
+      Remove Overlaps:                            On
+      Remove Overlaps synchronously:              On
+      Synchronous Overlap Reduction Step Size %:  1.0
+      Remove Overlaps hierarchically:             Off
+      Hierarchical Overlap Reduction Step Size %: 1.0
+
+    Grid beads:
+      Fuse Beads:                                 Off
+      Fuse Beads that overlap by more than:       0.0
+      Remove Overlaps:                            On
+      Remove Overlaps synchronously:              On
+      Synchronous Overlap Reduction Step Size %:  1.0
+      Remove Overlaps hierarchically:             Off
+      Hierarchical Overlap Reduction Step Size %: 1.0
+
+Miscellaneous options:
+  Calculate vbar                 On

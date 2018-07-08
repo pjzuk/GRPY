@@ -1,0 +1,55 @@
+ COALESCE PROCESS RESULTS -Version=    3.5000000000000000     
+  
+ Input File (Sanner): best_dim1ado_msms.face                                                          
+  Edge fraction =    1.2432460968764794     
+  
+  Beginning polygon Area =     39952.337411965011     
+ Initial number of triangle records=        87150
+ Number of degenerate triangles, pass 1=            0
+ Number of small triangles deleted, pass 1=        65696
+ Number of polygons generated, pass 1=        21454
+ total area, pass 1 =    39150.111795626683     
+  
+ Number of small triangles deleted, pass 2=        16828
+ Number of polygons generated, pass 2=         4626
+ total area, pass 2 =    36070.607490187991     
+ Average Triangle Area (A^2)=    7.7973643515322077     
+ Average edgelength (A)=    2.1980493768573539     
+ Cut-off length (A) =    2.7327163085196831     
+ Found          24  slender obtuse triangles,           processed          24
+  
+ Histogram bins and count follows:
+ Area distribution around  0.77973643515322077       A^2
+   0.0000000000000000                0
+  0.15594728703064420                0
+  0.31189457406128829                0
+  0.46784186109193249                0
+  0.62378914812257658                0
+  0.77973643515322077                1
+  0.93568372218386497                0
+   1.0916310092145092                0
+   1.2475782962451532                0
+   1.4035255832757974                0
+   1.5594728703064415                0
+ Area distribution around   7.7973643515322077      A^2
+   1.5594728703064415            32598
+   2.1832620184290183         44832500
+   2.8070511665515951            32658
+   3.4308403146741711         44836828
+   4.0546294627967470            33017
+   4.6784186109193246         59926836
+   5.3022077590419014            33613
+   5.9259969071644774             1205
+   6.5497860552870542             1163
+   7.1735752034096310         44838802
+   7.7973643515322077            33533
+   8.4211534996547837         61945874
+   9.0449426477773613            33243
+   9.6687317958999373       1386447784
+   10.292520944022513            33223
+   10.916310092145091       1386447556
+   11.540099240267669            33049
+   12.163888388390244         59924687
+   12.787677536512820            32777
+   13.411466684635396              134
+   14.035255832757974              485

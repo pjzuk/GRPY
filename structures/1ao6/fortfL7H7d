@@ -1,0 +1,24 @@
+ Generic file name: hpp_shell1ao6_inp             
+ Case: 1ao6                          
+ Input file: hpp_shell1ao6_inp             
+ Main results file: hpp_1ao6-res.txt              
+ Open SolPro file: hpp_1ao6-sol.txt              
+ Open Summary file: hpp_shell1ao6-sum.txt         
+ Open HydroFit file: hpp_shell1ao6-fit.txt         
+ Type of calculation ICASE =  12
+
+ Reading HYDRO (beads) file: hpp_shell1ao6_crd             
+ Number of beads: 3283
+ Coordinates and radii of first and last bead
+     1    59.975 51.717 40.466  3.030
+  3283    -0.138 29.575 -5.124  2.215
+ Unit of length, cm:   1.00E-08
+  
+                           Temperature:  20.0 centigrade
+                     Solvent viscosity:  0.01000 poise
+                      Molecular weight:    66428. Da
+        Solute partial specific volume: 0.734 cm^3/g
+                      Solution density: 1.000 g/cm^3
+                      Solution density: 1.000 g(cm^3
+  
+ Begin Open-HYDRO++ calculation

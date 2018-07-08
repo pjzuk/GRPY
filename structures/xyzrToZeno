@@ -1,0 +1,26 @@
+#!/bin/bash
+
+#for fold in 1g0b 1ova dim1hco dim2aai raw1a4v
+#for fold in [1248]* dim[1245]*
+#for fold in 1a4v 1a7m 1aki 1ao6 1avu 1bta 1bvg 1dwr 1e8l 1g0b 1hfx 1hrc 1lki 1ova 1stn 1svn 1tgn 1tpo 1ubq 1wrt 1znf 2cab 2cds 2cga 2eza 4cha 4pep 8rat avg1a7m avg1clb avg1e8l avg1egl avg1hko avg1nx7 avg1wrt avg1znf avg2bcb avg2sob avg6i1b dim1ado dim1beb dim1cts dim1faj dim1gd1 dim1gzx dim1hco dim1ypi dim2aai dim2gd1 dim2sod dim4cha dim4gpd dim5ldh fst1clb fst1egl fst1hko fst1nx7 fst2bcb fst2sob
+for fold in 1zag
+do
+    if [ -d "$fold" ]
+    then
+        cd $fold
+        for i in *HR_shell.xyzr
+        do 
+            if [ -e $i ]
+            then          
+                j=${i%.xyzr}
+                echo "units A" > $j".bod"
+                echo "temp 20 C" >> $j".bod"
+                echo "solvent water" >> $j".bod"
+                mw=$(sed '2q;d' specVmv)
+                echo mass $mw Da >> $j".bod"
+                sed -e 's/^/s /' $i >> $j".bod" 
+            fi
+        done 
+        cd ..    
+    fi
+done

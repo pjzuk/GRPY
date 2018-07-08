@@ -1,0 +1,55 @@
+ COALESCE PROCESS RESULTS -Version=    3.5000000000000000     
+  
+ Input File (Sanner): best_dim1beb_msms.face                                                          
+  Edge fraction =    1.0772294190719203     
+  
+  Beginning polygon Area =     12781.278482789294     
+ Initial number of triangle records=        25640
+ Number of degenerate triangles, pass 1=            0
+ Number of small triangles deleted, pass 1=        17698
+ Number of polygons generated, pass 1=         7942
+ total area, pass 1 =    12580.433015783366     
+  
+ Number of small triangles deleted, pass 2=         5670
+ Number of polygons generated, pass 2=         2272
+ total area, pass 2 =    11910.811447220551     
+ Average Triangle Area (A^2)=    5.2424346158541155     
+ Average edgelength (A)=    2.0470735666249302     
+ Cut-off length (A) =    2.2051678689728575     
+ Found           8  slender obtuse triangles,           processed           8
+  
+ Histogram bins and count follows:
+ Area distribution around  0.52424346158541157       A^2
+   0.0000000000000000                0
+  0.10484869231708233                0
+  0.20969738463416460                0
+  0.31454607695124692                0
+  0.41939476926832925                0
+  0.52424346158541157                0
+  0.62909215390249384                0
+  0.73394084621957623                0
+  0.83878953853665861                0
+  0.94363823085374077                0
+   1.0484869231708231                0
+ Area distribution around   5.2424346158541155      A^2
+   1.0484869231708229            32528
+   1.4678816924391520        929097448
+   1.8872764617074815            32532
+   2.3066712309758106        929101621
+   2.7260660002441397            32613
+   3.1454607695124692        944191202
+   3.5648555387807983            32736
+   3.9842503080491278              271
+   4.4036450773174574              221
+   4.8230398465857860        929101989
+   5.2424346158541155            32705
+   5.6618293851224450        946210209
+   6.0812241543907737            32665
+   6.5006189236591032      -1291000681
+   6.9200136929274327            32856
+   7.3394084621957614      -1291000712
+   7.7588032314640909            32822
+   8.1781980007324204        944189451
+   8.5975927700007500            32557
+   9.0169875392690795               28
+   9.4363823085374072               93

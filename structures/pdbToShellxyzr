@@ -1,0 +1,36 @@
+#!/bin/bash
+
+#for fold in [12345678]* dim[12345678] 
+#for fold in 1bvg 1a7m 1lki 1stn 1svn 1bta 1ubq 1wrt 1znf
+#for fold in 1g0b 1ova dim1hco dim2aai raw1a4v
+for fold in 1zag
+#for fold in 1a4v 1a7m 1aki 1ao6 1avu 1bta 1bvg 1dwr 1e8l 1g0b 1hfx 1hrc 1lki 1ova 1stn 1svn 1tgn 1tpo 1ubq 1wrt 1znf 2cab 2cds 2cga 2eza 4cha 4pep 8rat avg1a7m avg1clb avg1e8l avg1egl avg1hko avg1nx7 avg1wrt avg1znf avg2bcb avg2sob avg6i1b dim1ado dim1beb dim1cts dim1faj dim1gd1 dim1gzx dim1hco dim1ypi dim2aai dim2gd1 dim2sod dim4cha dim4gpd dim5ldh fst1clb fst1egl fst1hko fst1nx7 fst2bcb fst2sob
+do
+    if [ -d "$fold" ]
+    then
+        echo $fold
+        cd $fold
+        > $fold"_volumeStats"
+        sed '/^HETATM/ d' $fold".pdb" > $fold"NoHe.pdb"
+        /home/pawel/Pulpit/Wajnryb/msms/pdb_to_xyzrn_zuk $fold"NoHe.pdb" > $fold"NoHe.xyzrn"
+        /home/pawel/Pulpit/Wajnryb/msms/msms.x86_64Linux2.2.6.1 -pr 1.0 -if $fold"NoHe.xyzrn" -of $fold"NoHe_msms" >> $fold"_volumeStats"
+        python /media/pawel/storage/FUW_TEAM/Preludium/prackaStresslety/prackaStressletDilute/struktury/msmsConvert.py $fold"NoHe_msms.vert" 1> $fold"NoHeHR_shell.xyzr" 2>> $fold"_volumeStats"
+        /home/pawel/Pulpit/Wajnryb/msms/msms.x86_64Linux2.2.6.1 -pr 1.0 -if $fold"NoHeHR_shell.xyzr" -of $fold"NoHeHR_shell_msms" >> $fold"_volumeStats"
+        awk '/ses_volume:/{print; next}; NR in nr' $fold"_volumeStats" > tmp
+        awk '/total hydration volume/{print; next}; NR in nr' $fold"_volumeStats" >> tmp
+        mv tmp $fold"_volumeStats"
+        fileName="GRPY"$fold"NoHeHR_shell"
+        > $fileName
+        fileLen=$(wc -l < $fold"NoHeHR_shell.xyzr")
+        echo $fold"NoHeHR_shell" >> $fileName
+        echo "20." >> $fileName
+        echo "0.010" >> $fileName
+        sed '2q;d' specVmv >> $fileName
+        sed '1q;d' specVmv >> $fileName
+        echo "1.0" >> $fileName
+        echo "1.E-8" >> $fileName
+        echo $fileLen >> $fileName
+        cat $fold"NoHeHR_shell.xyzr" >> $fileName
+        cd ..    
+    fi
+done

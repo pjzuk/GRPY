@@ -1,0 +1,55 @@
+ COALESCE PROCESS RESULTS -Version=    3.5000000000000000     
+  
+ Input File (Sanner): best_1aki_msms.face                                                             
+  Edge fraction =   0.89772953040874270     
+  
+  Beginning polygon Area =     5793.7375294825524     
+ Initial number of triangle records=        10960
+ Number of degenerate triangles, pass 1=            0
+ Number of small triangles deleted, pass 1=         5370
+ Number of polygons generated, pass 1=         5590
+ total area, pass 1 =    5762.3098636594623     
+  
+ Number of small triangles deleted, pass 2=         3402
+ Number of polygons generated, pass 2=         2188
+ total area, pass 2 =    5608.8923116431797     
+ Average Triangle Area (A^2)=    2.5634791186669013     
+ Average edgelength (A)=    1.6374118735456948     
+ Cut-off length (A) =    1.4699529923238761     
+ Found          23  slender obtuse triangles,           processed          23
+  
+ Histogram bins and count follows:
+ Area distribution around  0.25634791186669015       A^2
+   0.0000000000000000                0
+   5.1269582373338035E-002           0
+  0.10253916474667607                0
+  0.15380874712001408                0
+  0.20507832949335211                0
+  0.25634791186669015                0
+  0.30761749424002816                0
+  0.35888707661336622                0
+  0.41015665898670423                0
+  0.46142624136004229                0
+  0.51269582373338030                0
+ Area distribution around   2.5634791186669013      A^2
+  0.51269582373338007            32544
+  0.71777415322673233      -1087625494
+  0.92285248272008435            32564
+   1.1279308122134364      -1087621284
+   1.3330091417067886            32725
+   1.5380874712001407      -1072531606
+   1.7431658006934927            32920
+   1.9482441301868449              396
+   2.1533224596801972              371
+   2.3584007891735492      -1087620690
+   2.5634791186669013            32824
+   2.7685574481602533      -1070512664
+   2.9736357776536053            32727
+   3.1787141071469573        150697125
+   3.3837924366403098            32920
+   3.5888707661336618        150697077
+   3.7939490956270139            32865
+   3.9990274251203664      -1072533462
+   4.2041057546137184            32605
+   4.4091840841070704               56
+   4.6142624136004224              195

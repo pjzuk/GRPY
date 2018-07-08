@@ -1,0 +1,32 @@
+MSMS 2.6.1 started on zukomputer
+Copyright M.F. Sanner (1994)
+Compilation flags -O2 -DVERBOSE -DTIMING
+Atom 1 ignored, radius = 0.000000
+INPUT  best_8rat.xyzr 951 spheres 0 collision only, radii  2.500 to  3.100
+PARAM  Probe_radius  1.500 density  1.000 hdensity  3.000
+REDUCED SURFACE ...
+    RS component 0 identified 469 467 468
+    0 free edge(s) found in component 0
+    RS component  #faces  #edges #free_edges  #vertices   genus
+         0         788     1182          0        383      6.5
+    Time Reduced Surface real: 0.04 user: 0.04 sys: 0.00
+ANALYTICAL SOLVENT EXCLUDED SURFACE...
+    Component   0
+        Time Surface real: 0.00 user: 0.00 sys: 0.00
+        Time Singularities real: 0.00 user: 0.00 sys: 0.00
+    SES comp.  #fac.  #edg. #s_edg. #vert. #s_vert. R_h C_h genus
+         0     2377   4761     17    2384       20   0   0    1
+ANALYTICAL SURFACE AREA :
+    Comp. probe_radius,   reent,    toric,   contact    SES       SAS
+      0       1.500     713.134  2168.446  3048.685  5930.265  6989.417
+TRIANGULATION...
+    Component 0
+    component#, vertices,  edges,  faces, genus, density
+        0           5808   17424   11616    1     0.979
+        Time Triangulation real: 0.03 user: 0.03 sys: 0.00
+NUMERICAL VOLUMES AND AREA
+    Comp. probe_radius SES_volume SES_area)
+       0      1.50    22764.768   5801.139
+    Total ses_volume: 22764.768
+MSMS terminated normally
+Total Time real: 0.14 user: 0.11 sys: 0.00

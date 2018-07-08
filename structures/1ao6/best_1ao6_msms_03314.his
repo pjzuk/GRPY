@@ -1,0 +1,55 @@
+ COALESCE PROCESS RESULTS -Version=    3.5000000000000000     
+  
+ Input File (Sanner): best_1ao6_msms.face                                                             
+  Edge fraction =    1.1230438687116011     
+  
+  Beginning polygon Area =     22037.486403804556     
+ Initial number of triangle records=        44290
+ Number of degenerate triangles, pass 1=            0
+ Number of small triangles deleted, pass 1=        31512
+ Number of polygons generated, pass 1=        12778
+ total area, pass 1 =    21610.018108374952     
+  
+ Number of small triangles deleted, pass 2=         9464
+ Number of polygons generated, pass 2=         3314
+ total area, pass 2 =    20211.080886288401     
+ Average Triangle Area (A^2)=    6.0986967067858782     
+ Average edgelength (A)=    2.1132738656610632     
+ Cut-off length (A) =    2.3732992577391205     
+ Found          20  slender obtuse triangles,           processed          20
+  
+ Histogram bins and count follows:
+ Area distribution around  0.60986967067858788       A^2
+   0.0000000000000000                0
+  0.12197393413571755                0
+  0.24394786827143516                0
+  0.36592180240715272                0
+  0.48789573654287033                1
+  0.60986967067858788                0
+  0.73184360481430544                0
+  0.85381753895002310                0
+  0.97579147308574066                0
+   1.0977654072214582                0
+   1.2197393413571758                0
+ Area distribution around   6.0986967067858782      A^2
+   1.2197393413571760            32719
+   1.7076350779000462      -1431722259
+   2.1955308144429155            32740
+   2.6834265509857862      -1431718046
+   3.1713222875286560            32936
+   3.6592180240715271      -1416628254
+   4.1471137606143973            33253
+   4.6350094971572666              673
+   5.1229052337001377              577
+   5.6108009702430079      -1431717039
+   6.0986967067858782            33137
+   6.5865924433287484      -1414609303
+   7.0744881798716186            33060
+   7.5623839164144897       1094760923
+   8.0502796529573590            32982
+   8.5381753895002284       1094760801
+   9.0260711260430995            32916
+   9.5139668625859706      -1416630186
+   10.001862599128842            32821
+   10.489758335671709               76
+   10.977654072214580              257

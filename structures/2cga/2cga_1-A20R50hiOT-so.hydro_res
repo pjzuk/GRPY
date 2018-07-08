@@ -1,0 +1,83 @@
+
+BEAMS -           IST. CBA                - COEFF/SUPCW v. 5.0
+
+**************************************************************
+***** Computational Method : Supermatrix Inversion ***********
+**************************************************************
+* Date: Fri 13 Apr 18 12:51:03                                *
+**************************************************************
+MODEL File Name  :___ 2cga_1-A20R50hiOT-so
+TOTAL Beads in the MODEL :___ 468
+TOTAL Surface Area of Beads in the MODEL :___ 190.23 [nm^2]
+TOTAL Volume of Beads in the MODEL :___ 14.41 [nm^3]
+
+Solvent:                Water
+Temperature:            20.00
+Solvent viscosity (cP): 1.001940
+Solvent density (g/ml): 0.998234
+
+Original vbar:          0.732 (computed) 	[cm^3/g]
+Temp corrected vbar:    0.732            	[cm^3/g]
+
+- WARNING: THERE ARE 8 BEADS COLOR CODED '0' [RADIUS < 0.005 NM]
+- THOSE BEADS ARE NOT USED IN THE HYDRODYNAMIC COMPUTATIONS
+
+- 'NORMALIZED' model -
+- STICK BOUNDARY CONDITIONS (6*PI*ETAo)
+
+- Used BEADS Number       = 172
+- Used BEADS Volume       = 8.14  [nm^3] (NO contribution from buried beads)
+- Used BEADS Surface Area = 98.89 [nm^2]
+- Used BEAD Mass     = 25659.36  [Da]
+- Conversion Factor  = 0.10
+
+- TRANS. FRICT. COEFF.  = 4.199e-08	[g/s]  (w@20C)
+- TRANS. DIFF. COEFF.   = 9.64e-07	[cm^2/s]  (20C,w)
+- SED. COEFF.           = 2.73	        [S]  (20C,w)
+- FRICTIONAL RATIO      = 1.14
+- ROT. FRICT. COEFF.    = 3.364e-21	[g*cm^2/s]  (w@20C)
+- ROT. DIFF. COEFF.     = 12062093	[1/s]  (20C,w)
+
+- ROT. FRICT. COEFF. [ X ] = 3.142e-21	[g*cm^2/s]  (w@20C)
+- ROT. FRICT. COEFF. [ Y ] = 3.404e-21	[g*cm^2/s]  (w@20C)
+- ROT. FRICT. COEFF. [ Z ] = 3.546e-21	[g*cm^2/s]  (w@20C)
+- ROT. DIFF. COEFF.  [ X ] = 12881630.67	[1/s]  (20C,w)
+- ROT. DIFF. COEFF.  [ Y ] = 11890293.27	[1/s]  (20C,w)
+- ROT. DIFF. COEFF.  [ Z ] = 11414354.82	[1/s]  (20C,w)
+
+- MOLECULAR WEIGHT (from file)           = 25659.36	[Da]
+- PARTIAL SPECIFIC VOLUME (computed)     = 0.732	[cm^3/g]
+
+- RADIUS OF GYRATION              = 1.69	[nm]
+- TRANSLATIONAL STOKES' RADIUS    = 2.22	[nm]
+- ROTATIONAL STOKES' RADIUS [ X ] = 2.32	[nm]
+- ROTATIONAL STOKES' RADIUS [ Y ] = 2.38	[nm]
+- ROTATIONAL STOKES' RADIUS [ Z ] = 2.41	[nm]
+
+- CENTRE OF RESISTANCE   :  -0.03	 0.01	-0.05	[nm]
+- CENTRE OF MASS         :   0.00	 0.00	-0.00	[nm]
+- CENTRE OF DIFFUSION    :  -0.03	 0.01	-0.05	[nm]
+- CENTRE OF VISCOSITY    :   0.08	 0.06	-0.21	[nm]
+
+- UNCORRECTED INTRINSIC VISCOSITY      = 2.65	[cm^3/g]
+- UNCORRECTED EINSTEIN'S RADIUS        = 2.21	[nm]
+- CORRECTED INTRINSIC VISCOSITY        = 3.13	[cm^3/g]
+- CORRECTED EINSTEIN'S RADIUS          = 2.34	[nm]
+
+RELAXATION TIMES
+
+ Tau(1) 	14.33	[ns]  (20C,w)
+ Tau(2) 	13.91	[ns]  (20C,w)
+ Tau(3) 	14.20	[ns]  (20C,w)
+ Tau(4) 	13.36	[ns]  (20C,w)
+ Tau(5) 	13.34	[ns]  (20C,w)
+
+ Tau(m) 	13.83	[ns]  (20C,w)
+ Tau(h) 	13.82	[ns]  (20C,w)
+
+- MAX EXTENSIONS:
+[X axis] = 5.63 [nm];  [Y axis] = 4.79 [nm];  [Z axis] = 4.60 [nm]
+- AXIAL RATIOS : [X:Z] = 1.2; [X:Y] = 1.2; [Y:Z] = 1.0
+
+
+********************************************************************************

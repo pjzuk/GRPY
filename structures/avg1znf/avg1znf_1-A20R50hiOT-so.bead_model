@@ -1,0 +1,104 @@
+52	0.695
+7.9291	-2.7029	1.3862	2.4871	43.049999	12	ACE.SC.A.0	63.0902
+5.7007	-2.8607	2.1564	0.0010	56.050003	0	TYR.PB.A.1	0.0000
+9.8438	1.3935	5.1183	2.2033	107.140015	4	TYR.SC.A.1	102.4909
+2.8967	-4.4483	2.6912	1.6122	56.050003	1	LYS.PB.A.2	34.2565
+7.6481	-9.8396	1.3992	2.3666	72.139999	14	LYS.SC.A.2	104.6722
+-0.3129	-4.2414	2.9193	1.3732	56.050003	6	CYS.PB.A.3	24.1345
+-2.4928	-3.7927	0.9805	1.5785	46.090000	6	CYS.SC.A.3	6.3785
+-1.9676	-6.8116	3.8640	1.5362	57.059998	1	GLY.PB.A.4	27.9417
+-4.0608	-7.0273	1.4601	1.0665	56.050003	1	LEU.PB.A.5	14.3701
+-5.6532	-4.5258	3.5765	2.5766	57.130001	3	LEU.SC.A.5	76.4399
+-1.3222	-7.6656	-0.7970	1.4743	56.050003	1	CYS.PB.A.6	24.0548
+-2.4757	-5.9582	-2.7897	1.3922	46.090000	5	CYS.SC.A.6	14.5684
+1.9083	-7.3169	-0.6293	1.5357	56.050003	6	GLU.PB.A.7	22.3869
+1.2839	-10.9285	3.1843	3.7537	73.080002	2	GLU.SC.A.7	214.0151
+3.4374	-5.2744	-2.2722	1.4825	56.050003	6	ARG.PB.A.8	14.8850
+-2.5806	-5.5348	-7.7595	3.0968	100.160004	14	ARG.SC.A.8	186.0959
+6.3366	-3.6222	-2.2813	1.2404	56.050003	1	SER.PB.A.9	13.0540
+7.3412	-7.5312	-1.8193	1.6060	31.040001	4	SER.SC.A.9	52.4616
+7.1618	-0.5106	-1.6704	1.3519	56.050003	6	PHE.PB.A.10	4.0866
+2.6473	-0.9504	-3.0958	2.9896	91.140015	6	PHE.SC.A.10	76.1637
+9.6832	1.2641	-1.1508	0.0010	56.050003	0	VAL.PB.A.11	0.0000
+10.8612	1.0172	-3.4227	2.6056	43.100002	3	VAL.SC.A.11	106.8820
+7.5376	3.6530	0.3402	1.9674	56.050003	6	GLU.PB.A.12	30.0740
+9.9202	7.4310	-3.8066	2.4747	73.080002	2	GLU.SC.A.12	126.3355
+5.1935	5.0362	1.9772	1.1491	56.050003	6	LYS.PB.A.13	10.2084
+6.8871	3.3850	7.6689	2.1800	72.139999	14	LYS.SC.A.13	110.5293
+3.9768	6.5178	-0.4297	1.9280	56.050003	6	SER.PB.A.14	36.1933
+7.3193	8.0003	-0.7870	1.5510	31.040001	4	SER.SC.A.14	40.5692
+3.0286	3.9288	-1.8562	0.4331	56.050003	6	ALA.PB.A.15	3.7884
+4.8020	3.8720	-3.2390	1.8163	15.040000	3	ALA.SC.A.15	45.9623
+1.3173	2.8897	0.4874	0.3785	56.050003	6	LEU.PB.A.16	0.7706
+2.6508	0.7811	2.3789	2.7524	57.130001	3	LEU.SC.A.16	44.2775
+-0.6098	5.2675	0.6044	1.1439	56.050003	6	SER.PB.A.17	9.6542
+1.5500	6.1720	3.2010	2.3526	31.040001	4	SER.SC.A.17	98.8081
+-1.5416	5.0614	-2.3474	0.9623	56.050003	6	ARG.PB.A.18	4.4152
+-2.4951	4.1928	-6.6028	3.4843	100.160004	14	ARG.SC.A.18	192.1793
+-2.6435	2.1362	-2.2120	1.3666	56.050003	6	HIS.PB.A.19	5.4170
+-2.4605	-1.6511	-4.4079	2.0346	81.110008	6	HIS.SC.A.19	6.5169
+-5.2785	2.6029	-0.6805	0.9692	56.050003	6	GLN.PB.A.20	3.5218
+-3.4189	0.1355	2.2630	2.3836	72.089996	4	GLN.SC.A.20	65.5601
+-7.1639	3.1381	-2.9882	1.6213	56.050003	6	ARG.PB.A.21	11.6959
+-5.2167	6.5792	0.0802	3.0797	100.160004	14	ARG.SC.A.21	112.6080
+-7.8709	-0.0200	-3.1905	0.9683	56.050003	1	VAL.PB.A.22	20.0525
+-6.1091	-0.5492	-5.1854	1.7453	43.100002	3	VAL.SC.A.22	45.1955
+-9.3517	0.0718	0.0475	1.5659	56.050003	6	HIS.PB.A.23	32.1123
+-7.0364	-3.6655	-1.6374	2.1760	81.110008	4	HIS.SC.A.23	55.2391
+-9.6852	1.8386	2.6118	1.5659	56.050003	1	LYS.PB.A.24	45.7673
+-11.1015	6.2449	-1.6535	3.0642	72.139999	14	LYS.SC.A.24	179.6837
+-11.2085	0.1492	4.5502	0.4529	41.029999	1	ASN.PB.A.25	0.5880
+-10.2872	-0.6151	7.4834	2.7151	58.060001	4	ASN.SC.A.25	154.5488
+-12.2010	-0.3310	2.8450	1.0153	41.029999	1	NH2.PB.A.26	38.5041
+-3.7679	-4.3663	-1.7070	0.9264	65.379997	6	ZN.SC.A.27	0.0000
+
+Field contents:
+  Line 1: Number of beads, Global partial specific volume
+  From line 2 on: X, Y, Z coordinates, Radius, Mass, Color coding, Correspondence with original residues, ASA
+
+Bead Model Output:
+  Sequence:                   as in original PDB file
+
+Model scale (10^-x m) (10 = Angstrom, 9 = nanometer), where x is : 10
+Bead model built with the following options:
+ASA Calculation:
+  Perform ASA Calculation:    On
+  Recheck Bead ASA:           On
+  ASA Method:                 Rolling Sphere
+  ASA Probe Radius (A):       1.40
+  Probe Recheck Radius (A):   1.40
+  SOMO ASA Threshold (A^2):   20.0
+  SOMO Bead ASA Threshold %:  50.0
+  ASAB1 Step Size (A):        1.0
+
+Overlap Reduction:
+  Bead Overlap Tolerance:     0.001000
+    Exposed Side chain beads:
+      Fuse Beads:                                 On
+      Fuse Beads that overlap by more than:       70.0
+      Remove Overlaps:                            On
+      Remove Overlaps synchronously:              Off
+      Synchronous Overlap Reduction Step Size %:  1.0
+      Remove Overlaps hierarchically:             On
+      Hierarchical Overlap Reduction Step Size %: 1.0
+      Outward Translation:                        On
+    Exposed Main and side chain beads:
+      Fuse Beads:                                 On
+      Fuse Beads that overlap by more than:       70.0
+      Remove Overlaps:                            On
+      Remove Overlaps synchronously:              Off
+      Synchronous Overlap Reduction Step Size %:  1.0
+      Remove Overlaps hierarchically:             On
+      Hierarchical Overlap Reduction Step Size %: 1.0
+    Buried beads:
+      Fuse Beads:                                 Off
+      Fuse Beads that overlap by more than:       0.0
+      Remove Overlaps:                            On
+      Remove Overlaps synchronously:              Off
+      Synchronous Overlap Reduction Step Size %:  1.0
+      Remove Overlaps hierarchically:             On
+      Hierarchical Overlap Reduction Step Size %: 1.0
+
+Miscellaneous options:
+  Calculate vbar                 On
+  Enable Peptide Bond Rule       On

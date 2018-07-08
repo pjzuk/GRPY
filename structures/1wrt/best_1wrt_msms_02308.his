@@ -1,0 +1,55 @@
+ COALESCE PROCESS RESULTS -Version=    3.5000000000000000     
+  
+ Input File (Sanner): best_1wrt_msms.face                                                             
+  Edge fraction =    1.0791620936395774     
+  
+  Beginning polygon Area =     12872.954802488735     
+ Initial number of triangle records=        25976
+ Number of degenerate triangles, pass 1=            0
+ Number of small triangles deleted, pass 1=        17938
+ Number of polygons generated, pass 1=         8038
+ total area, pass 1 =    12645.553356080527     
+  
+ Number of small triangles deleted, pass 2=         5730
+ Number of polygons generated, pass 2=         2308
+ total area, pass 2 =    11992.016923131394     
+ Average Triangle Area (A^2)=    5.1958478869720075     
+ Average edgelength (A)=    2.0425406082964401     
+ Cut-off length (A) =    2.2042323991930424     
+ Found          20  slender obtuse triangles,           processed          20
+  
+ Histogram bins and count follows:
+ Area distribution around  0.51958478869720082       A^2
+   0.0000000000000000                0
+  0.10391695773944015                0
+  0.20783391547888036                0
+  0.31175087321832051                0
+  0.41566783095776066                0
+  0.51958478869720082                0
+  0.62350174643664102                2
+  0.72741870417608112                0
+  0.83133566191552122                0
+  0.93525261965496154                0
+   1.0391695773944016                0
+ Area distribution around   5.1958478869720075      A^2
+   1.0391695773944019            32689
+   1.4548374083521622      -1498949912
+   1.8705052393099222            32699
+   2.2861730702676830      -1498945735
+   2.7018409012254434            32776
+   3.1175087321832047      -1483856154
+   3.5331765631409651            32911
+   3.9488443940987255              279
+   4.3645122250564858              212
+   4.7801800560142471      -1498945352
+   5.1958478869720075            32837
+   5.6115157179297679      -1481837168
+   6.0271835488875292            32810
+   6.4428513798452896         43337342
+   6.8585192108030499            32872
+   7.2741870417608103         43337320
+   7.6898548727185716            32810
+   8.1055227036763320      -1483857908
+   8.5211905346340924            32727
+   8.9368583655918528               39
+   9.3525261965496131               95

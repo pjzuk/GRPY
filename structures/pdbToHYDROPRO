@@ -1,0 +1,27 @@
+#!/bin/bash
+
+#for fold in 1g0b 1ova dim1hco dim2aai raw1a4v
+#for fold in [1248]* dim[1245]*
+for fold in 1zag
+do
+    if [ -d "$fold" ]
+    then
+        if [ -f $fold"/specVmv" ]
+            then
+            cd $fold
+            fileHYDROPRO="hydropro.dat"
+            cp /home/pawel/Pulpit/Wajnryb/deLaTorre/hydropro10/hydropro_clear.dat $fileHYDROPRO
+            nameVal=$fold
+            outputVal=$fold
+            pdbVal=$fold".pdb"
+            mwVal=$(sed '2q;d' specVmv)
+            vbarVal=$(sed '1q;d' specVmv)
+            sed -i -e "s/nameValue/$nameVal/g" $fileHYDROPRO
+            sed -i -e "s/outputValue/$outputVal/g" $fileHYDROPRO
+            sed -i -e "s/pdbValue/$pdbVal/g" $fileHYDROPRO
+            sed -i -e "s/mwValue/$mwVal/g" $fileHYDROPRO
+            sed -i -e "s/vbarValue/$vbarVal/g" $fileHYDROPRO
+            cd .. 
+        fi
+    fi
+done

@@ -1,0 +1,32 @@
+In this folder we provide the set of structure that were used to create data for publication
+
+GRPY - an accurate bead method for calculation of hydrodynamic properties of rigid biomacromolecules
+Zuk, Cichocki, Szymczak, Biophysical Journal 2018
+
+Folder contains:
+-->  folders named as pdb structure with a possible prefix
+       1) no prefix  - monomeric molecules from Xray
+       2) dim prefix - multimeric molecules from Xray
+       3) avg prefix - average structure calculated from complete pdb entry from NMR
+       4) fst prefix - first structure from complete pdb entry from NMR
+     most folders should contain
+       1) original pdb entry
+       2) name      - file including human readable name of the structure
+       3) specVmw   - file including specific volume and molecular weight
+       4) expD, expEta, expTau - file containing normalized (to the best of our knowledge)
+                                 experimental values and citations explained in the bibtex file
+       5) various hydrodynamic input files for GRPY, SOMO, ZENO, HYDRO++, HYDROPRO
+                                 programs
+       6) various hydrodynamic output files for GRPY, SOMO, ZENO, HYDRO++, HYDROPRO
+                                 programs
+-->  files to organize the data
+       1) harvestData files - bash scripts that scan folders and generate Data files
+                              with deviations from experimental values
+       2) makeTable files   - python scripts that generate data rows for tables present
+                              in the publication
+       3) citationsLib.bib  - bibtex file explaining citations
+       4) files converting data between various formats with meaningful names
+                              These files may contain links to other external programs
+                              that are needed to perform the conversions however all
+                              of them should be freely available.
+

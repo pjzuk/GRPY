@@ -1,0 +1,55 @@
+ COALESCE PROCESS RESULTS -Version=    3.5000000000000000     
+  
+ Input File (Sanner): best_1bta_msms.face                                                             
+  Edge fraction =   0.86447323559451283     
+  
+  Beginning polygon Area =     4480.4675078041128     
+ Initial number of triangle records=        11448
+ Number of degenerate triangles, pass 1=            0
+ Number of small triangles deleted, pass 1=         5830
+ Number of polygons generated, pass 1=         5618
+ total area, pass 1 =    4467.2375656820923     
+  
+ Number of small triangles deleted, pass 2=         3090
+ Number of polygons generated, pass 2=         2528
+ total area, pass 2 =    4374.2632476367417     
+ Average Triangle Area (A^2)=    1.7303256517550403     
+ Average edgelength (A)=    1.4300100844631760     
+ Cut-off length (A) =    1.2362054446486643     
+ Found          12  slender obtuse triangles,           processed          12
+  
+ Histogram bins and count follows:
+ Area distribution around  0.17303256517550403       A^2
+   0.0000000000000000                0
+   3.4606513035100817E-002           0
+   6.9213026070201605E-002           0
+  0.10381953910530242                0
+  0.13842605214040321                0
+  0.17303256517550403                0
+  0.20763907821060484                0
+  0.24224559124570563                0
+  0.27685210428080642                0
+  0.31145861731590724                0
+  0.34606513035100805                0
+ Area distribution around   1.7303256517550403      A^2
+  0.34606513035100805            32722
+  0.48449118249141132      -1865886131
+  0.62291723463181459            32748
+  0.76134328677221752              127
+  0.89976933891262079              322
+   1.0381953910530242      -1880975100
+   1.1766214431934274            33307
+   1.3150474953338305      -1863866482
+   1.4534735474742337            33388
+   1.5918995996146370        -83710224
+   1.7303256517550403            33265
+   1.8687517038954435        -83711010
+   2.0071777560358468            33115
+   2.1456038081762498      -1865887473
+   2.2840298603166529            32965
+   2.4224559124570564              205
+   2.5608819645974599              149
+   2.6993080167378629      -1869225965
+   2.8377340688782660            32824
+   2.9761601210186690      -1869261050
+   3.1145861731590725            33053

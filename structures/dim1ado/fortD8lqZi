@@ -1,0 +1,24 @@
+ Generic file name: hpp_shelldim1ado_inp          
+ Case: dim1ado                       
+ Input file: hpp_shelldim1ado_inp          
+ Main results file: hpp_dim1ado-res.txt           
+ Open SolPro file: hpp_dim1ado-sol.txt           
+ Open Summary file: hpp_shelldim1ado-sum.txt      
+ Open HydroFit file: hpp_shelldim1ado-fit.txt      
+ Type of calculation ICASE =  12
+
+ Reading HYDRO (beads) file: hpp_shelldim1ado_crd          
+ Number of beads: 7695
+ Coordinates and radii of first and last bead
+     1    33.618 -3.131  1.743  2.436
+  7695    17.878-22.812  1.031  2.619
+ Unit of length, cm:   1.00E-08
+  
+                           Temperature:  20.0 centigrade
+                     Solvent viscosity:  0.01000 poise
+                      Molecular weight:   157131. Da
+        Solute partial specific volume: 0.736 cm^3/g
+                      Solution density: 1.000 g/cm^3
+                      Solution density: 1.000 g(cm^3
+  
+ Begin Open-HYDRO++ calculation

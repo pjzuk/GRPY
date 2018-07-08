@@ -1,0 +1,2674 @@
+#VRML V2.0 utf8
+Transform {
+  translation   0.13797E+01  -0.27246E+00   0.21442E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.38992E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.12007E+01  -0.31890E+00   0.38946E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.42343E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.10972E+01  -0.87177E-01   0.47897E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.42343E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.12702E+01   0.66462E-01   0.61052E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.39407E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.13330E+01   0.97067E-02   0.84219E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.40713E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.13694E+01   0.26480E+00   0.50228E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.40713E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.14924E+01   0.15117E+00   0.96536E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.40713E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.15309E+01   0.40499E+00   0.62486E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.40713E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.15914E+01   0.34881E+00   0.85670E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.39407E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.17426E+01   0.48743E+00   0.97896E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.38002E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.14044E+01  -0.10386E+00   0.16421E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.12805E+01  -0.41143E+00   0.53654E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.95236E+00  -0.12787E+00   0.59696E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.12590E+01  -0.14327E+00   0.92615E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.15413E+01   0.10684E+00   0.11431E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.16101E+01   0.55357E+00   0.53839E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.18100E+01   0.61048E+00   0.88578E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.97049E+00  -0.67964E+00   0.37914E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.42300E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.52939E+00  -0.76607E+00   0.61028E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.39999E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.86847E+00  -0.10944E+01   0.35235E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.45196E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.10720E+01  -0.11693E+01   0.19316E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.45196E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.11472E+01  -0.14222E+01   0.24448E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.45196E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.12896E+01  -0.15240E+01   0.40422E-01
+  children [
+    Shape {
+      geometry Sphere { radius   0.45196E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.15018E+01  -0.13851E+01  -0.92145E-02
+  children [
+    Shape {
+      geometry Sphere { radius   0.45196E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.10647E+01  -0.72665E+00   0.52113E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.38824E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.91916E+00  -0.11075E+01   0.53646E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.38824E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.12212E+01  -0.10522E+01   0.21778E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.38824E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.12501E+01  -0.14270E+01   0.40578E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.38824E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.13420E+01  -0.17026E+01   0.84574E-01
+  children [
+    Shape {
+      geometry Sphere { radius   0.38824E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.11806E+01  -0.15303E+01  -0.11669E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.38824E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.16060E+01  -0.13813E+01   0.13398E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.38824E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.14577E+01  -0.12197E+01  -0.54434E-01
+  children [
+    Shape {
+      geometry Sphere { radius   0.38824E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.14140E+00  -0.68412E+00   0.30342E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.35064E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.14934E+00  -0.79513E+00   0.58532E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.24545E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.30679E+00  -0.66227E+00   0.10140E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.31558E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.13463E+00  -0.51345E+00   0.38853E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.21039E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.10265E+00  -0.10770E+01   0.48378E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.38992E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.57127E-02  -0.12518E+01   0.63591E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.42343E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.42669E-01  -0.12390E+01   0.67234E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.39407E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.23976E+00  -0.15687E+01   0.49321E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.36240E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.12007E+00  -0.13911E+01   0.67169E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.56389E-01  -0.11738E+01   0.80299E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.38562E+00  -0.12064E+01   0.44163E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.32610E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.59900E+00  -0.12847E+01   0.32514E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.37160E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.64762E+00  -0.15517E+01   0.63506E-02
+  children [
+    Shape {
+      geometry Sphere { radius   0.28434E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.77915E+00  -0.10848E+01   0.30917E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.37160E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.10069E+01  -0.76600E+00   0.50884E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.37160E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.95193E+00  -0.11486E+01   0.71499E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.37160E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.67622E+00  -0.14278E+01   0.42581E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.25969E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.93957E+00  -0.11550E+01   0.23187E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.25969E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.68025E+00  -0.90237E+00   0.62819E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.25969E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.11673E+01  -0.82650E+00   0.42440E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.25969E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.10506E+01  -0.68589E+00   0.67679E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.25969E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.11045E+01  -0.12289E+01   0.63295E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.25969E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.82663E+00  -0.12846E+01   0.76304E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.25969E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.10071E+01  -0.10591E+01   0.87466E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.25969E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.29291E+00  -0.13600E+01  -0.27125E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.35064E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.65667E-01  -0.13997E+01  -0.48782E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.24545E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.41147E+00  -0.12222E+01  -0.46853E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.35064E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.29288E+00  -0.93351E+00  -0.51666E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.31558E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.34454E+00  -0.15429E+01  -0.29224E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.21039E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.38425E+00  -0.13193E+01  -0.63101E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.21039E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.59952E+00  -0.12096E+01  -0.43777E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.21039E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.38604E+00  -0.13663E+01  -0.18151E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.54245E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.70704E+00  -0.12550E+01  -0.30071E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.52658E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.44407E+00  -0.15452E+01  -0.50418E-02
+  children [
+    Shape {
+      geometry Sphere { radius   0.55864E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.33139E+00  -0.16275E+01   0.22502E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.55864E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.43431E+00  -0.18615E+01   0.30406E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.54245E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.62882E+00  -0.18537E+01   0.40509E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.52658E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.31908E+00  -0.20422E+01   0.25971E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.52658E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.40749E+00  -0.16715E+01  -0.14415E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.51991E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.36603E+00  -0.14990E+01   0.36165E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.51991E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.14223E+00  -0.16482E+01   0.20422E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.51991E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.40165E+00  -0.10413E+01  -0.42242E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.37104E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.53951E+00  -0.92297E+00  -0.60030E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.40760E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.57405E+00  -0.93092E+00  -0.64578E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.37561E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.37980E+00  -0.78003E+00  -0.76209E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.40760E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.23318E+00  -0.94121E+00  -0.91947E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.40760E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.52278E-01  -0.79795E+00  -0.10567E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.40760E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.10558E+00  -0.95330E+00  -0.11882E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.37104E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.28786E+00  -0.88142E+00  -0.13171E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.37561E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.33306E+00  -0.65310E+00  -0.13418E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.38266E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.42500E+00  -0.10390E+01  -0.14221E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.38266E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.63292E+00  -0.10528E+01  -0.70526E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.48564E+00  -0.66363E+00  -0.87069E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.34766E+00  -0.10354E+01  -0.10409E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.14118E+00  -0.10694E+01  -0.81143E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.14205E+00  -0.67984E+00  -0.11775E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.75494E-01  -0.11273E+01  -0.11752E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.22613E+00  -0.53487E+00  -0.12661E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.46992E+00  -0.59896E+00  -0.14397E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.39108E+00  -0.12115E+01  -0.14036E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.56245E+00  -0.98720E+00  -0.15204E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.93957E+00  -0.78760E+00  -0.52776E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.38992E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.11328E+01  -0.66985E+00  -0.40936E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.42343E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.11631E+01  -0.64725E+00  -0.51439E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.39407E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.12694E+01  -0.35052E+00  -0.64748E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.36240E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.13588E+01  -0.80532E+00  -0.46495E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.42343E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.13142E+01  -0.10495E+01  -0.45694E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.38002E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.97932E+00  -0.89209E+00  -0.66460E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.11048E+01  -0.68357E+00  -0.22061E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.14219E+01  -0.76139E+00  -0.64010E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.14940E+01  -0.75886E+00  -0.33775E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.10437E+01  -0.25388E+00  -0.34069E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.29805E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.10524E+01  -0.18954E-02  -0.38309E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.35064E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.55717E+00   0.13080E+00  -0.61885E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.32610E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.48906E+00  -0.15293E+00  -0.30858E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.32610E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.38262E+00   0.22723E-01  -0.75467E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.32610E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.31175E+00  -0.25818E+00  -0.44129E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.32610E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.26627E+00  -0.17729E+00  -0.66947E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.32610E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.10510E+01   0.31325E-01  -0.57165E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.21039E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.66240E+00   0.26984E+00  -0.69321E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.21039E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.34464E+00   0.89855E-01  -0.92755E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.21039E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.14221E+00  -0.26871E+00  -0.77945E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.21039E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.14351E+01   0.18296E+00  -0.42542E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.32610E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.16574E+01   0.28334E+00  -0.35644E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.37160E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.17939E+01   0.47595E+00  -0.92208E-02
+  children [
+    Shape {
+      geometry Sphere { radius   0.28434E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.17752E+01   0.37653E+00  -0.58042E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.37160E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.16811E+01   0.61451E+00  -0.66286E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.37160E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.20393E+01   0.38414E+00  -0.54653E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.37160E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.14075E+01   0.17605E+00  -0.59963E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.25969E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.17621E+01   0.13789E+00  -0.28999E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.25969E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.17444E+01   0.25072E+00  -0.72165E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.25969E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.14913E+01   0.60585E+00  -0.68358E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.25969E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.17261E+01   0.75197E+00  -0.53792E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.25969E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.17589E+01   0.65840E+00  -0.83188E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.25969E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.20965E+01   0.20668E+00  -0.50543E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.25969E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.21220E+01   0.44162E+00  -0.70860E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.25969E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.20839E+01   0.50256E+00  -0.40392E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.25969E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.14125E+01   0.79006E+00   0.18342E-01
+  children [
+    Shape {
+      geometry Sphere { radius   0.54974E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.14473E+01   0.10320E+01  -0.95082E-01
+  children [
+    Shape {
+      geometry Sphere { radius   0.54974E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.13058E+01   0.10707E+01  -0.32105E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.54974E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.13640E+01   0.13072E+01  -0.43201E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.53299E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.15387E+01   0.13141E+01  -0.56433E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.51653E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.12341E+01   0.14765E+01  -0.38124E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.51653E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.13287E+01   0.58812E+00  -0.28138E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.50960E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.15460E+01   0.77638E+00   0.15471E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.50960E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.14025E+01   0.11679E+01   0.32008E-01
+  children [
+    Shape {
+      geometry Sphere { radius   0.50960E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.16329E+01   0.10506E+01  -0.13803E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.50960E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.13448E+01   0.93557E+00  -0.44994E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.50960E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.10272E+01   0.83812E+00   0.77276E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.45196E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.82352E+00   0.78271E+00   0.93973E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.45196E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.89580E+00   0.79090E+00   0.11991E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.45196E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.10749E+01   0.60275E+00   0.12703E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.45196E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.99714E+00   0.36517E+00   0.12051E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.45196E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.13174E+01   0.87187E+00   0.44539E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.38824E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.10815E+01   0.10201E+01   0.79459E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.38824E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.68428E+00   0.91147E+00   0.91362E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.38824E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.75115E+00   0.61036E+00   0.89894E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.38824E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.96741E+00   0.96357E+00   0.12394E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.38824E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.73835E+00   0.76621E+00   0.13051E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.38824E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.12450E+01   0.63746E+00   0.11901E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.38824E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.10977E+01   0.60923E+00   0.14600E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.38824E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.83867E+00   0.33219E+00   0.12772E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.38824E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.11143E+01   0.24643E+00   0.12641E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.38824E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.82031E+00   0.11469E+01   0.31811E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.38992E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.65148E+00   0.13077E+01   0.21579E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.42343E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.29425E+00   0.11682E+01   0.37283E-01
+  children [
+    Shape {
+      geometry Sphere { radius   0.36240E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.79096E+00   0.15084E+01   0.10394E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.42343E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.10093E+01   0.14177E+01   0.26025E-01
+  children [
+    Shape {
+      geometry Sphere { radius   0.38002E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.99031E+00   0.11916E+01   0.29382E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.53327E+00   0.13765E+01   0.34963E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.69230E+00   0.15855E+01  -0.41088E-01
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.82458E+00   0.16439E+01   0.23493E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.10690E+01   0.15105E+01  -0.10289E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.63644E+00   0.10557E+01  -0.12689E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.37104E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.53296E+00   0.91308E+00  -0.31112E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.40760E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.19485E+00   0.66981E+00  -0.28707E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34025E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.72141E+00   0.81799E+00  -0.47713E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.40760E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.41619E+00   0.10241E+01  -0.41400E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.63841E+00   0.71022E+00  -0.61196E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.81198E+00   0.96346E+00  -0.56160E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.19197E+00   0.11290E+00   0.52849E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.40760E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.44892E+00  -0.91339E-01   0.25663E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.40760E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.50810E+00   0.47443E+00   0.44074E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.56689E+00   0.89287E-01   0.56530E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.15876E+00   0.28025E+00   0.61406E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.17287E+00  -0.32759E-01   0.65022E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.42363E+00  -0.25502E+00   0.35025E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.87877E-01   0.82655E+00   0.40654E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.45196E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.46400E+00   0.80302E+00   0.22102E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.39999E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.20113E-01   0.10534E+01   0.53389E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.45196E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.15156E+00   0.10068E+01   0.70697E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.41463E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.16945E+00   0.70902E+00   0.53349E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.38824E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.47442E-01   0.11833E+01   0.41096E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.38824E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.17583E+00   0.11255E+01   0.61836E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.38824E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation   0.29672E+00   0.96398E+00   0.63144E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.38824E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.17683E+00   0.98731E+00   0.20334E-01
+  children [
+    Shape {
+      geometry Sphere { radius   0.37104E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.31696E+00   0.10437E+01  -0.18550E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.40760E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.16444E+00   0.11774E+01  -0.36385E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.40760E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.30154E+00   0.13253E+01  -0.54379E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.40760E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.34055E+00   0.12062E+01  -0.78215E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.40760E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.51211E+00   0.10153E+01  -0.76787E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.37104E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.55808E+00   0.85968E+00  -0.93724E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.37561E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.46033E+00   0.88043E+00  -0.11486E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.38266E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.70261E+00   0.68202E+00  -0.89131E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.38266E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.45756E+00   0.11603E+01  -0.12784E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.58975E-01   0.13020E+01  -0.26410E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.44390E-01   0.10580E+01  -0.45250E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.46828E+00   0.13832E+01  -0.47051E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.19703E+00   0.14818E+01  -0.57885E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.40743E+00   0.13369E+01  -0.90476E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.17363E+00   0.11399E+01  -0.84833E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.35207E+00   0.10161E+01  -0.11812E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.49586E+00   0.76354E+00  -0.12763E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.74508E+00   0.56450E+00  -0.10166E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.28676E+00   0.63277E+00  -0.30883E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.49986E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.36229E+00   0.41035E+00  -0.40564E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.52113E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.14972E+00   0.24703E+00  -0.41478E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.52113E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.36113E+00  -0.30201E+00  -0.65830E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.51057E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.42572E+00   0.42423E+00  -0.58631E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.47582E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.25183E-01   0.31217E+00  -0.54453E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.47582E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.28706E+00   0.93132E-02  -0.84224E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.47582E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.42926E+00  -0.41436E+00  -0.79446E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.47582E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.81017E+00   0.33156E+00   0.33349E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.45196E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.58643E+00   0.24088E+00   0.44873E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.45196E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.53901E+00  -0.16646E-01   0.39860E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.42653E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.34677E+00  -0.64592E-01   0.27726E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.43203E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.67390E+00  -0.16991E+00   0.46638E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.39999E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.82302E+00   0.52053E+00   0.35831E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.38824E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.96097E+00   0.24842E+00   0.41683E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.38824E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.60543E+00   0.26078E+00   0.63522E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.38824E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.15862E+01   0.35678E+00  -0.46561E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.36240E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.12252E+01   0.78735E+00  -0.49263E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.42343E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.13572E+01   0.10157E+01  -0.43951E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.42343E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.12421E+01   0.11655E+01  -0.24816E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.42343E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.12690E+01   0.10639E+01  -0.12386E-01
+  children [
+    Shape {
+      geometry Sphere { radius   0.38992E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.10960E+01   0.98484E+00   0.12592E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.39407E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.87723E+00   0.96332E+00   0.46528E-01
+  children [
+    Shape {
+      geometry Sphere { radius   0.40049E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.11433E+01   0.92496E+00   0.34674E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.40049E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.12866E+01   0.72799E+00  -0.66377E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.13564E+01   0.11197E+01  -0.60007E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.15393E+01   0.97818E+00  -0.39495E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.10593E+01   0.11982E+01  -0.29281E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.13302E+01   0.13351E+01  -0.24638E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.14318E+01   0.10704E+01   0.56048E-01
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.74584E+00   0.90502E+00   0.15225E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.13076E+01   0.94068E+00   0.40965E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.10136E+01   0.86752E+00   0.45247E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.12216E+01   0.21193E+00  -0.50754E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.35001E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.12724E+01  -0.50855E-02  -0.62712E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.39043E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.13314E+01   0.96046E-02  -0.58002E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.35514E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.15399E+01  -0.32484E+00  -0.57721E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.31478E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.10235E+01  -0.34563E+00  -0.78963E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.39043E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.88477E+00   0.48981E-01  -0.84188E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.39043E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.13628E+01   0.30691E-01  -0.79185E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.29516E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.11252E+01  -0.46728E+00  -0.68624E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.29516E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.10908E+01  -0.33246E+00  -0.96705E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.29516E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.83951E+00  -0.39535E+00  -0.78871E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.29516E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.71170E+00  -0.28596E-01  -0.85930E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.29516E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.96839E+00   0.55108E-01  -0.10133E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.29516E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.14129E+01  -0.15537E+00  -0.24482E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.45158E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.15350E+01  -0.31473E+00  -0.84422E-01
+  children [
+    Shape {
+      geometry Sphere { radius   0.47728E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.18709E+01  -0.23264E+00   0.15851E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.43160E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.13554E+01  -0.47427E+00   0.36717E-01
+  children [
+    Shape {
+      geometry Sphere { radius   0.47728E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.11531E+01  -0.54927E+00  -0.11413E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.45469E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.11630E+01  -0.71323E+00  -0.29072E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.44019E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.94261E+00  -0.74820E+00  -0.36493E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.46461E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.16598E+01  -0.42416E+00  -0.17943E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.42158E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.12796E+01  -0.38535E+00   0.18826E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.42158E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.14459E+01  -0.63000E+00   0.10120E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.42158E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.13084E+01  -0.79144E+00  -0.35441E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.42158E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.89136E+00  -0.86458E+00  -0.50492E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.42158E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.15424E+01  -0.18910E-01   0.21608E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.38992E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.16092E+01   0.13234E+00   0.40849E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.42343E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.19241E+01   0.91274E-01   0.68681E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.36240E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.17255E+01   0.35814E+00   0.31626E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.42343E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.19424E+01   0.31166E+00   0.16332E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.42343E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.20810E+01   0.53621E+00   0.10982E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.42343E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.19425E+01   0.70691E+00  -0.45425E-01
+  children [
+    Shape {
+      geometry Sphere { radius   0.42343E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.20859E+01   0.91162E+00  -0.10999E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.42343E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.13769E+01   0.55379E-02   0.15768E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.14397E+01   0.17840E+00   0.48515E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.17743E+01   0.46745E+00   0.46536E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.18897E+01   0.23085E+00  -0.15504E-02
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.20591E+01   0.19118E+00   0.25559E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.22411E+01   0.48616E+00   0.17636E-01
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.21301E+01   0.62170E+00   0.27370E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.17873E+01   0.76850E+00   0.47835E-01
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.18876E+01   0.61758E+00  -0.20559E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.21374E+01   0.99762E+00   0.36196E-01
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.19903E+01   0.10210E+01  -0.21126E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.22286E+01   0.85848E+00  -0.20024E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34793E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.16679E+01  -0.20817E+00   0.65913E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.37104E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.17754E+01  -0.35859E+00   0.83630E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.40760E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.17661E+01  -0.20395E+00   0.78570E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.37561E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.21774E+01  -0.43221E+00   0.94425E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.34025E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.17323E+01  -0.25353E+00   0.10813E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.40760E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.17258E+01  -0.43832E+00   0.12752E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.37561E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.19220E+01  -0.55323E+00   0.13250E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.38266E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.15431E+01  -0.47873E+00   0.13810E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.34025E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.15229E+01  -0.26785E+00   0.57731E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.16850E+01  -0.52690E+00   0.82770E+00
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.15619E+01  -0.16653E+00   0.10818E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.18655E+01  -0.12196E+00   0.11216E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.20697E+01  -0.51657E+00   0.12321E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}
+Transform {
+  translation  -0.19210E+01  -0.67477E+00   0.14529E+01
+  children [
+    Shape {
+      geometry Sphere { radius   0.32370E+00 }
+      appearance Appearance { material Material{ diffuseColor 1.0 1.0 0.0 }                                                                                                                           }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+ COALESCE PROCESS RESULTS -Version=    3.5000000000000000     
+  
+ Input File (Sanner): best_avg1hko_msms.face                                                          
+  Edge fraction =   0.96343197137204883     
+  
+  Beginning polygon Area =     6307.5845557405210     
+ Initial number of triangle records=        15552
+ Number of degenerate triangles, pass 1=            0
+ Number of small triangles deleted, pass 1=         8938
+ Number of polygons generated, pass 1=         6614
+ total area, pass 1 =    6285.8636201553900     
+  
+ Number of small triangles deleted, pass 2=         4272
+ Number of polygons generated, pass 2=         2342
+ total area, pass 2 =    6071.9251591585380     
+ Average Triangle Area (A^2)=    2.5926238937483084     
+ Average edgelength (A)=    1.5724511262101231     
+ Cut-off length (A) =    1.5149496884108171     
+ Found          20  slender obtuse triangles,           processed          20
+  
+ Histogram bins and count follows:
+ Area distribution around  0.25926238937483087       A^2
+   0.0000000000000000                0
+   5.1852477874966163E-002           0
+  0.10370495574993235                0
+  0.15555743362489852                0
+  0.20740991149986471                0
+  0.25926238937483087                0
+  0.31111486724979703                0
+  0.36296734512476325                0
+  0.41481982299972942                0
+  0.46667230087469558                0
+  0.51852477874966174                0
+ Area distribution around   2.5926238937483084      A^2
+  0.51852477874966185            32608
+  0.72593469024952628       -143636915
+  0.93334460174939071            32618
+   1.1407545132492556               94
+   1.3481644247491200              147
+   1.5555743362489851       -158730166
+   1.7629842477488495            32988
+   1.9703941592487142       -141621599
+   2.1778040707485791            33063
+   2.3852139822484437       1814069936
+   2.5926238937483084            33124
+   2.8000338052481730       1814069463
+   3.0074437167480377            32992
+   3.2148536282479023       -143638366
+   3.4222635397477674            32772
+   3.6296734512476316              127
+   3.8370833627474967               96
+   4.0444932742473609       -146976815
+   4.2519031857472260            32662
+   4.4593130972470902       -147011873
+   4.6667230087469544            32801

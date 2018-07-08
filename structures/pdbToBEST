@@ -1,0 +1,23 @@
+#!/bin/bash
+
+#for fold in 1g0b 1ova dim1hco dim2aai raw1a4v
+#for fold in [1248]* dim[1245]*
+for fold in 1zag
+do
+    if [ -d "$fold" ]
+    then
+        cd $fold
+        bestFileXYZR="best_"$fold".xyzr"
+        bestFileMSMS="best_"$fold"_msms"
+        /home/pawel/Pulpit/Wajnryb/msms/pdb_to_xyzr_zuk $fold".pdb" > $bestFileXYZR
+        /home/pawel/Pulpit/Wajnryb/BEST/hydrate -f $bestFileXYZR -d 1.1
+        mv fort.11 $bestFileXYZR
+        /home/pawel/Pulpit/Wajnryb/msms/msms.x86_64Linux2.2.6.1 -if $bestFileXYZR -of $bestFileMSMS -p 1.5 -de 1.0 > "best_"$fold"_msms.msms.log"
+        mw=$( sed '2q;d' specVmv )
+        nMax=$(echo "30*sqrt("$mw")/1" | bc)
+        nMax=$(echo $(($nMax<5000?$nMax:5000)))
+        /home/pawel/Pulpit/Wajnryb/BEST/rcoal3/rcoal3_static -f "best_"$fold"_msms.face" -nmax $nMax -nmin 2000 -n 5 -s
+        rm fort.12
+        cd ..    
+    fi
+done

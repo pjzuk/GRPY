@@ -1,0 +1,92 @@
+
+                                                           GRPY program
+
+                                     Hydrodynamic properties of the macromolecule
+                            based on the Generalized Rotne-Prager-Yamakawa method
+
+                                          from the:  us-somo input file
+
+                                      Rotational diffusion coefficient:  9.816E+07 [s^-1]    
+                            Rotational relaxation times associated with
+                                   the Brownian relaxation of a vector:
+                                                -> Relaxation time (1):  4.729E-09 [s]       
+                                                -> Relaxation time (2):  5.063E-09 [s]       
+                                                -> Relaxation time (3):  5.558E-09 [s]       
+                            Rotational relaxation times associated with
+               the Brownian relaxation of a traceless symmetric tensor:
+                                                -> Relaxation time (1):  1.554E-09 [s]       
+                                                -> Relaxation time (2):  1.872E-09 [s]       
+                                                -> Relaxation time (3):  1.840E-09 [s]       
+                                                -> Relaxation time (4):  1.709E-09 [s]       
+                                                -> Relaxation time (5):  1.567E-09 [s]       
+                                      Harmonic mean (correlation) time:  1.698E-09 [s]       
+        Sedimentation coefficient (Mw Dlt (1. - (vbar*rho))/(nA kB T)):  7.334E-01 [Svedberg]
+
+                             High frequency intrinsic viscosity eta oo:  2.716E+00 [cm^3/g]  
+                              Zero frequency intrinsic viscosity eta 0:  2.862E+00 [cm^3/g]  
+
+              calculated using the origin               
+                of the coordinate system:               
+   0.000E+00  0.000E+00  0.000E+00
+                   as the reference point               
+         in the standard reference frame:               
+         e1:  1.000E+00  0.000E+00  0.000E+00
+         e2:  0.000E+00  1.000E+00  0.000E+00
+         e3:  0.000E+00  0.000E+00  1.000E+00
+
+                                   Translational diffusion coefficient:  1.903E-06 [cm^2/s]  
+
+                   6x6 diffusion matrix:        Dtt  Dtr
+
+                                                Drt  Drr
+
+   1.981E-06 -1.444E-08 -6.975E-09     3.674E-02 -1.916E-01 -1.238E-01
+  -1.444E-08  1.918E-06 -4.012E-08     1.889E-01 -9.972E-02  8.925E-02
+  -6.975E-09 -4.012E-08  1.809E-06     3.857E-01  5.568E-02  4.790E-02
+
+   3.674E-02  1.889E-01  3.857E-01     1.143E+08 -2.065E+06 -3.889E+05
+  -1.916E-01 -9.972E-02  5.568E-02    -2.065E+06  9.686E+07 -2.082E+06
+  -1.238E-01  8.925E-02  4.790E-02    -3.889E+05 -2.082E+06  8.332E+07
+
+    calculated using the mobility center:               
+      x [cm]     y [cm]     z [cm]
+  -1.605E-10 -2.596E-09  1.828E-09
+                   as the reference point               
+                  in the reference frame:               
+         e1:  2.229E-02  1.517E-01  9.882E-01
+         e2:  1.135E-01  9.817E-01 -1.532E-01
+         e3: -9.933E-01  1.155E-01  4.671E-03
+
+                                   Translational diffusion coefficient:  1.902E-06 [cm^2/s]  
+
+                   6x6 diffusion matrix:        Dtt  Dtr
+
+                                                Drt  Drr
+
+   1.798E-06 -2.311E-08  2.276E-09     7.198E-02  5.987E-02 -7.746E-02
+  -2.311E-08  1.926E-06  6.458E-09     5.987E-02 -1.211E-01  1.723E-02
+   2.276E-09  6.458E-09  1.983E-06    -7.746E-02  1.723E-02  3.408E-02
+
+   7.198E-02  5.987E-02 -7.746E-02     8.299E+07  0.000E+00 -3.410E-10
+   5.987E-02 -1.211E-01  1.723E-02     0.000E+00  9.694E+07 -1.739E-09
+  -7.746E-02  1.723E-02  3.408E-02    -3.410E-10 -1.782E-09  1.145E+08
+
+                                       Radius of the sphere with equal:
+
+                                   Translational diffusion coefficient:  1.129E-07 [cm]      
+                                      Rotational diffusion coefficient:  1.179E-07 [cm]      
+                            Rotational relaxation times associated with
+                                   the Brownian relaxation of a vector:
+                                                -> Relaxation time (1):  1.659E-07 [cm]      
+                                                -> Relaxation time (2):  1.698E-07 [cm]      
+                                                -> Relaxation time (3):  1.751E-07 [cm]      
+                            Rotational relaxation times associated with
+               the Brownian relaxation of a traceless symmetric tensor:
+                                                -> Relaxation time (1):  1.145E-07 [cm]      
+                                                -> Relaxation time (2):  1.218E-07 [cm]      
+                                                -> Relaxation time (3):  1.211E-07 [cm]      
+                                                -> Relaxation time (4):  1.182E-07 [cm]      
+                                                -> Relaxation time (5):  1.148E-07 [cm]      
+                                                  Mean relaxation time:  1.179E-07 [cm]      
+                             High frequency intrinsic viscosity eta oo:  1.099E-07 [cm]      
+                              Zero frequency intrinsic viscosity eta 0:  1.118E-07 [cm]      

@@ -1,0 +1,55 @@
+ COALESCE PROCESS RESULTS -Version=    3.5000000000000000     
+  
+ Input File (Sanner): best_fst1clb_msms.face                                                          
+  Edge fraction =   0.84124303209098494     
+  
+  Beginning polygon Area =     3943.0298996435226     
+ Initial number of triangle records=         9940
+ Number of degenerate triangles, pass 1=            0
+ Number of small triangles deleted, pass 1=         4982
+ Number of polygons generated, pass 1=         4958
+ total area, pass 1 =    3930.0091908537456     
+  
+ Number of small triangles deleted, pass 2=         2594
+ Number of polygons generated, pass 2=         2364
+ total area, pass 2 =    3866.2062437568907     
+ Average Triangle Area (A^2)=    1.6354510337381094     
+ Average edgelength (A)=    1.4296574416258929     
+ Cut-off length (A) =    1.2026893610448066     
+ Found          11  slender obtuse triangles,           processed          11
+  
+ Histogram bins and count follows:
+ Area distribution around  0.16354510337381095       A^2
+   0.0000000000000000                0
+   3.2709020674762196E-002           0
+   6.5418041349524378E-002           0
+   9.8127062024286574E-002           0
+  0.13083608269904876                0
+  0.16354510337381095                0
+  0.19625412404857315                0
+  0.22896314472333534                0
+  0.26167216539809751                0
+  0.29438118607285968                0
+  0.32709020674762190                0
+ Area distribution around   1.6354510337381094      A^2
+  0.32709020674762179            32551
+  0.45792628944667069       1929680617
+  0.58876237214571936            32565
+  0.71959845484476803       1929684826
+  0.85043453754381670            32842
+  0.98127062024286560       1944778860
+   1.1121067029419143            33186
+   1.2429427856409632              636
+   1.3737788683400118              584
+   1.5046149510390607       1929685879
+   1.6354510337381094            33041
+   1.7662871164371581       1946793655
+   1.8971231991362070            32907
+   2.0279592818352556      -2047142004
+   2.1587953645343045            33019
+   2.2896314472333534      -2047142079
+   2.4204675299324023            32929
+   2.5513036126314508       1944776800
+   2.6821396953304992            32659
+   2.8129757780295481               70
+   2.9438118607285970              312

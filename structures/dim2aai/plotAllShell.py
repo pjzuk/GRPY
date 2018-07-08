@@ -1,0 +1,8 @@
+for i in open('2aaiNoHeHR_shell.xyzr'): (lambda x: cmd.pseudoatom(pos=x[0:3],vdw=x[3],b=1,name="a"))([float(j) for j in i.split()])
+for i in open('2aaiNoHe.xyzr'): (lambda x: cmd.pseudoatom(pos=x[0:3],vdw=x[3],b=2,name="sh"))([float(j) for j in i.split()])
+cmd.translate(vector=[50.,0.,0.],selection="name sh")
+cmd.bg_color(color="white")
+cmd.show(representation="sph")
+cmd.spectrum(expression="b")
+cmd.set(name="orthoscopic",value="on")
+cmd.center()

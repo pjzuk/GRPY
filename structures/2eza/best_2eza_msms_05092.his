@@ -1,0 +1,55 @@
+ COALESCE PROCESS RESULTS -Version=    3.5000000000000000     
+  
+ Input File (Sanner): best_2eza_msms.face                                                             
+  Edge fraction =   0.94950986969804796     
+  
+  Beginning polygon Area =     12523.546523825447     
+ Initial number of triangle records=        32000
+ Number of degenerate triangles, pass 1=            0
+ Number of small triangles deleted, pass 1=        18136
+ Number of polygons generated, pass 1=        13864
+ total area, pass 1 =    12486.863291914789     
+  
+ Number of small triangles deleted, pass 2=         8772
+ Number of polygons generated, pass 2=         5092
+ total area, pass 2 =    12116.239753335272     
+ Average Triangle Area (A^2)=    2.3794657803093622     
+ Average edgelength (A)=    1.5274086200307400     
+ Cut-off length (A) =    1.4502895597810632     
+ Found          31  slender obtuse triangles,           processed          31
+  
+ Histogram bins and count follows:
+ Area distribution around  0.23794657803093622       A^2
+   0.0000000000000000                0
+   4.7589315606187232E-002           0
+   9.5178631212374493E-002           0
+  0.14276794681856173                0
+  0.19035726242474899                0
+  0.23794657803093622                0
+  0.28553589363712345                0
+  0.33312520924331068                0
+  0.38071452484949797                0
+  0.42830384045568520                2
+  0.47589315606187244                0
+ Area distribution around   2.3794657803093622      A^2
+  0.47589315606187244            32575
+  0.66625041848662114       -838048169
+  0.85660768091137030            32628
+   1.0469649433361192              240
+   1.2373222057608682              661
+   1.4276794681856173       -853140563
+   1.6180367306103662            34115
+   1.8083939930351152       -836031628
+   1.9987512554598643            34347
+   2.1891085178846130      -2105342313
+   2.3794657803093622            34085
+   2.5698230427341113      -2105344346
+   2.7601803051588600            33788
+   2.9505375675836092       -838049018
+   3.1408948300083583            33197
+   3.3312520924331070              529
+   3.5216093548578562              445
+   3.7119666172826049       -841387824
+   3.9023238797073541            32833
+   4.0926811421321032       -841422972
+   4.2830384045568515            33296

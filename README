@@ -13,3 +13,5 @@ This directory consists of
      set of scripts for constructing hydrated atom bead model from pdb file
   -> userGuide.pdf
      user guide
+  -> structures:
+     folder with complete data used to create tables in the publication

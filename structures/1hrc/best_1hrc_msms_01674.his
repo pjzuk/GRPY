@@ -1,0 +1,55 @@
+ COALESCE PROCESS RESULTS -Version=    3.5000000000000000     
+  
+ Input File (Sanner): best_1hrc_msms.face                                                             
+  Edge fraction =   0.92612084169368081     
+  
+  Beginning polygon Area =     5636.7085575492438     
+ Initial number of triangle records=        10410
+ Number of degenerate triangles, pass 1=            0
+ Number of small triangles deleted, pass 1=         5910
+ Number of polygons generated, pass 1=         4500
+ total area, pass 1 =    5567.9147365239423     
+  
+ Number of small triangles deleted, pass 2=         2826
+ Number of polygons generated, pass 2=         1674
+ total area, pass 2 =    5392.3921155166045     
+ Average Triangle Area (A^2)=    3.2212617177518545     
+ Average edgelength (A)=    1.8097906048166283     
+ Cut-off length (A) =    1.6760847982220917     
+ Found          10  slender obtuse triangles,           processed          10
+  
+ Histogram bins and count follows:
+ Area distribution around  0.32212617177518549       A^2
+   0.0000000000000000                0
+   6.4425234355037109E-002           0
+  0.12885046871007422                0
+  0.19327570306511130                0
+  0.25770093742014838                0
+  0.32212617177518549                0
+  0.38655140613022260                0
+  0.45097664048525965                0
+  0.51540187484029676                0
+  0.57982710919533387                0
+  0.64425234355037098                0
+ Area distribution around   3.2212617177518545      A^2
+  0.64425234355037109            32748
+  0.90195328097051952        974382825
+   1.1596542183906675            32752
+   1.4173551558108159        974387000
+   1.6750560932309642            32815
+   1.9327570306511128        989476535
+   2.1904579680712608            32892
+   2.4481589054914092              207
+   2.7058598429115577              172
+   2.9635607803317061        974387269
+   3.2212617177518545            32882
+   3.4789626551720030        991495530
+   3.7366635925921514            32841
+   3.9943645300122999        408501126
+   4.2520654674324483            32825
+   4.5097664048525967        408501086
+   4.7674673422727452            32804
+   5.0251682796928936        989474820
+   5.2828692171130420            32768
+   5.5405701545331896               25
+   5.7982710919533380               76

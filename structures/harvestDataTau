@@ -1,0 +1,184 @@
+#!/bin/bash
+
+for name in Tau
+do
+    path=$(pwd)
+    outFile=$path"/data"$name
+    > $outFile
+#    for fold in [12348]* dim[12345]* avg[12348]*
+    for fold in 1znf avg1wrt 1gzx avg1clb 1svn 1bvg avg2bcb avg1e8l 1lki 1dwr 2cds avg1a7m 8rat 1aki avg1nx7 1ubq 1stn 2eza dim1gzx avg2sob avg6i1b
+#    for fold in 1bta avg1egl 1ova 1hfx 1g0b avg1hko dim1beb 
+    do
+        if [ -d "$fold" ]
+        then
+            cd $fold
+            expName="exp"$name
+            if [ -e $expName ]
+            then
+                isVal=1
+                avVal=$(sed -n '0~2!p' $expName | awk '{ total += $1; count++ } END { print total/count}')
+                ref=$(sed -n '1~2!p' $expName | paste -sd" " | sed -r ':a; s/\b([[:alnum:]]+)\b(.*)\b\1\b/\1\2/g; ta; s/(, )+/, /g; s/, *$//')
+                case $name in
+                D)   
+                    #expVal=$(sed '1q;d' $expName)"E-07" ;;
+                    expVal=$avVal"E-07" ;;
+                Eta) 
+                    #expVal=$(sed '1q;d' $expName) ;;
+                    expVal=$avVal ;;
+                Tau) 
+                    #expVal=$(sed '1q;d' $expName) ;;
+                    expVal=$avVal"E-09" ;;
+                esac
+                mass=$(sed '2q;d' specVmv)
+                echo "molecule " $fold $mass >> $outFile
+                echo "refs " $ref >> $outFile
+                echo $expVal >> $outFile
+                echo -n "huReadName " >> $outFile
+                head -n 1 name >> $outFile
+            else
+                isVal=0
+            fi
+    
+            for file in *GRPY *output
+            do
+                if [ -e "$file" ] && [ $isVal -eq 1 ]
+                then
+                    model=$(echo $file | cut -d "-" -f 2)
+                    case $name in
+                    D)
+                        num=59
+                        line=$(sed $num"q;d" $file)
+                        wnum=4 
+                        val=$(echo $line | cut -d " " -f $wnum)
+                        ;;
+                    Eta)
+                        line=$(grep -F "  Brownian intrinsic" $file)
+                        val="$(cut -d' ' -f4 <<< $line)"
+                        ;;
+                    Tau)
+                        line=$(grep -F "Harmonic mean (correlation) time" $file)
+                        val="$(cut -d' ' -f5 <<< $line)"
+                        ;;
+                    esac
+                    err=$(python -c "print ("$val"-"$expVal")/"$expVal" * 100")
+                    echo "GRPY" $model $val $err >> $outFile
+                fi
+            done
+            for file in *hydro_res
+            do
+                if [ -e "$file" ] && [ $isVal -eq 1 ]
+                then
+                    model=$(echo $file | cut -d "-" -f 2)
+                    case $name in
+                    D)
+                        line=$(grep -F "TRANS. DIFF. COEFF." $file)
+                        val="$(cut -d' ' -f6 <<< $line)"
+                        ;;
+                    Eta)
+                        line=$(grep -F " CORRECTED INTRINSIC VISCOSITY" $file)
+                        val="$(cut -d' ' -f6 <<< $line)"
+                        ;;
+                    Tau)
+                        line=$(grep -F "Tau(h)" $file)
+                        val="$(cut -d' ' -f2 <<< $line)"
+                        val=$(python -c "print "$val" * 10**-9")
+                        ;;
+                    esac
+                    err=$(python -c "print ("$val"-"$expVal")/"$expVal" * 100")
+                    echo "SMI" $model $val $err >> $outFile
+                fi
+            done
+            for file in $fold*"res.txt"
+            do
+                if [ -e "$file" ] && [ $isVal -eq 1 ]
+                then
+                    model=${file%%.*}
+                    case $name in
+                    D)
+                        line=$(grep -F "Translational diffusion coefficient:" $file)
+                        val="$(cut -d' ' -f4 <<< $line)"
+                        ;;
+                    Eta)
+                        line=$(grep -F "Intrinsic viscosity:" $file)
+                        val="$(cut -d' ' -f3 <<< $line)"
+                        ;;
+                    Tau)
+                        line=$(grep -F " Harmonic mean (correlation) time:" $file)
+                        val="$(cut -d' ' -f5 <<< $line)"
+                        ;;
+                    esac
+                    err=$(python -c "print ("$val"-"$expVal")/"$expVal" * 100")
+                    echo "HP" $model $val $err >> $outFile
+                fi
+            done
+            for file in hpp*res.txt
+            do
+                if [ -e "$file" ] && [ $isVal -eq 1 ]
+                then
+                    model=${file%%.*}
+                    case $name in
+                    D)
+                        line=$(grep -F "Translational diffusion coefficient:" $file)
+                        val="$(cut -d' ' -f4 <<< $line)"
+                        ;;
+                    Eta)
+                        line=$(grep -F "Intrinsic viscosity:" $file)
+                        val="$(cut -d' ' -f3 <<< $line)"
+                        ;;
+                    Tau)
+                        line=$(grep -F " Harmonic mean (correlation) time:" $file)
+                        val="$(cut -d' ' -f5 <<< $line)"
+                        ;;
+                    esac
+                    err=$(python -c "print ("$val"-"$expVal")/"$expVal" * 100")
+                    echo "hpp" $model $val $err >> $outFile
+                fi
+            done
+            for file in *.zno
+            do
+                if [ -e "$file" ] && [ $isVal -eq 1 ]
+                then
+                    model=${file%%.*}
+                    case $name in
+                    D)
+                        line=$(grep -F "D  . ." $file)
+                        IFS=' ' read -ra ADDR <<< "$line"
+                        val=${ADDR[-2]}
+                        val="$(cut -d'(' -f1 <<< $val)""$(cut -d')' -f2 <<< $val)"
+                        ;;
+                    Eta)
+                        line=$(grep -F "[eta](M)" $file)
+                        IFS=' ' read -ra ADDR <<< "$line"
+                        val=${ADDR[-2]}
+                        val="$(cut -d'(' -f1 <<< $val)""$(cut -d')' -f2 <<< $val)"
+                        ;;
+                    esac
+                    err=$(python -c "print ("$val"-"$expVal")/"$expVal" * 100")
+                    echo "zno" $model $val $err >> $outFile
+               fi
+            done
+            file='best_fitResults'
+            if [ -f "$file" ] && [ $isVal -eq 1 ]
+            then
+                model="BEST"
+                case $name in
+                D)
+                    num=1
+                    val=$(sed $num"q;d" $file)
+                    ;;
+                Eta)
+                    num=2
+                    val=$(sed $num"q;d" $file)
+                    ;;
+                Tau)
+                    num=3
+                    val=$(sed $num"q;d" $file)
+                    ;;
+                esac
+                err=$(python -c "print ("$val"-"$expVal")/"$expVal" * 100")
+                echo "BEST" $model $val $err >> $outFile
+            fi
+            cd ..
+        fi
+    done
+done

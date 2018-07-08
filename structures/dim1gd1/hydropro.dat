@@ -1,0 +1,18 @@
+dim1gd1       
+dim1gd1     
+dim1gd1.pdb      
+1               !Type of calculation
+2.9,            !AER, radius of primary elements
+6,              !NSIG
+1.5,            !Minimum radius of beads in the shell (SIGMIN)	
+2.0,            !Maximum radius of beads in the shell (SIGMAX)	
+20.,            !T (temperature, centigrade)
+0.01,           !ETA (Viscosity of the solvent in poises)
+146438         
+0.741	
+1.0,            !Solvent density, g/cm3
+0               !Number of values of Q
+0  		!Number of intervals
+0,              !Number of trials for MC calculation of covolume
+1               !IDIF=1 (yes) for full diffusion tensors
+*                                    !End of file

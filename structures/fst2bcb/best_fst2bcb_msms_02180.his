@@ -1,0 +1,55 @@
+ COALESCE PROCESS RESULTS -Version=    3.5000000000000000     
+  
+ Input File (Sanner): best_fst2bcb_msms.face                                                          
+  Edge fraction =   0.86355240078819651     
+  
+  Beginning polygon Area =     3932.5383093540881     
+ Initial number of triangle records=        10002
+ Number of degenerate triangles, pass 1=            0
+ Number of small triangles deleted, pass 1=         5136
+ Number of polygons generated, pass 1=         4866
+ total area, pass 1 =    3919.9482871038285     
+  
+ Number of small triangles deleted, pass 2=         2686
+ Number of polygons generated, pass 2=         2180
+ total area, pass 2 =    3842.3175707291516     
+ Average Triangle Area (A^2)=    1.7625309957473172     
+ Average edgelength (A)=    1.4434284885735358     
+ Cut-off length (A) =    1.2464761366737547     
+ Found           9  slender obtuse triangles,           processed           9
+  
+ Histogram bins and count follows:
+ Area distribution around  0.17625309957473173       A^2
+   0.0000000000000000                0
+   3.5250619914946352E-002           0
+   7.0501239829892703E-002           0
+  0.10575185974483904                0
+  0.14100247965978538                0
+  0.17625309957473173                0
+  0.21150371948967808                0
+  0.24675433940462443                0
+  0.28200495931957076                0
+  0.31725557923451708                0
+  0.35250619914946346                0
+ Area distribution around   1.7625309957473172      A^2
+  0.35250619914946335            32659
+  0.49350867880924887      -1078815151
+  0.63451115846903416            32671
+  0.77551363812881957              111
+  0.91651611778860476              198
+   1.0575185974483903      -1093908397
+   1.1985210771081758            33035
+   1.3395235567679609      -1076799868
+   1.4805260364277464            33045
+   1.6215285160875319      -2071786547
+   1.7625309957473172            33038
+   1.9035334754071025      -2071787057
+   2.0445359550668880            32981
+   2.1855384347266735      -1078816610
+   2.3265409143864586            32811
+   2.4675433940462441              128
+   2.6085458737060296              104
+   2.7495483533658147      -1082155056
+   2.8905508330256002            32726
+   3.0315533126853857      -1082190094
+   3.1725557923451708            32857

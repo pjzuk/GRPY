@@ -1,0 +1,62 @@
+      ------------------------------------------------------------
+                       HYDRO++, Version 10, July 2011             
+  
+           J. Garcia de la Torre, G. del Rio and A. Ortega,       
+      "Improved  calculation of rotational diffusion and intrinsic
+           viscosities  of bead models for macromolecules and     
+           nanoparticles. J. Phys. Chem B. 111,955-961 (2007).    
+  
+                         Based on:  HYDRO                         
+      J. Garcia de la Torre, S. Navarro, M.C. Lopez Martinez, F.G.
+      Diaz, J. Lopez Cascales. "HYDRO. A computer software for the
+        prediction of hydrodynamic properties of macromolecules". 
+                  Biophys. J. 67, 530-531 (1994).                 
+      ------------------------------------------------------------
+
+       Type of hydrodynamic treatment : 12
+
+
+
+
+                          SUMMARY OF DATA AND RESULTS
+  
+                            This file : hpp_1bta-res.txt              
+                                 Case : 1bta                          
+                      Structural file : hpp_shell1bta_crd             
+  
+                           Temperature:  20.0 centigrade
+                     Solvent viscosity:  0.01000 poise
+                      Molecular weight:    10211. Da
+        Solute partial specific volume: 0.741 cm^3/g
+                      Solution density: 1.000 g/cm^3
+  
+   Translational diffusion coefficient:  1.282E-06 cm^2/s
+                    Radius of gyration:  1.337E-07 cm
+                                Volume:  4.442E-20 cm^3
+      Rotational diffusion coefficient:  1.039E+07 s^-1
+                   Relaxation time (1):  1.629E-08 s
+                   Relaxation time (2):  1.617E-08 s
+                   Relaxation time (3):  1.617E-08 s
+                   Relaxation time (4):  1.580E-08 s
+                   Relaxation time (5):  1.580E-08 s
+      Harmonic mean (correlation) time:  1.604E-08 s
+                   Intrinsic viscosity:  4.011E+00 cm^3/g
+             Sedimentation coefficient:  1.391E+00 Svedberg
+  
+  
+                     Longest distance :  4.331E-07 cm
+
+
+                        List of equivalent radii
+
+                         Translational:  1.675E-07
+                             Gyration :  1.726E-07
+                               Volume :  2.231E-07
+                          Rotation (1):  2.545E-07
+                          Rotation (2):  2.538E-07
+                          Rotation (3):  2.538E-07
+                          Rotation (4):  2.519E-07
+                          Rotation (5):  2.519E-07
+                          Rotation (h):  2.532E-07
+                   Intrinsic viscosity:  1.895E-07
+                      Longest distance:  2.165E-07

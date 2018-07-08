@@ -1,0 +1,55 @@
+ COALESCE PROCESS RESULTS -Version=    3.5000000000000000     
+  
+ Input File (Sanner): best_1dwr_msms.face                                                             
+  Edge fraction =   0.91708919105956521     
+  
+  Beginning polygon Area =     6571.8854026694153     
+ Initial number of triangle records=        13024
+ Number of degenerate triangles, pass 1=            0
+ Number of small triangles deleted, pass 1=         6796
+ Number of polygons generated, pass 1=         6228
+ total area, pass 1 =    6535.8040328034240     
+  
+ Number of small triangles deleted, pass 2=         3862
+ Number of polygons generated, pass 2=         2366
+ total area, pass 2 =    6322.7089013672785     
+ Average Triangle Area (A^2)=    2.6723199075939470     
+ Average edgelength (A)=    1.6598896194466082     
+ Cut-off length (A) =    1.5222668283464595     
+ Found          20  slender obtuse triangles,           processed          20
+  
+ Histogram bins and count follows:
+ Area distribution around  0.26723199075939469       A^2
+   0.0000000000000000                0
+   5.3446398151878932E-002           0
+  0.10689279630375789                0
+  0.16033919445563682                0
+  0.21378559260751576                0
+  0.26723199075939469                0
+  0.32067838891127365                0
+  0.37412478706315255                0
+  0.42757118521503146                0
+  0.48101758336691047                0
+  0.53446398151878938                0
+ Area distribution around   2.6723199075939470      A^2
+  0.53446398151878949            32760
+  0.74824957412630511      -1739454899
+  0.96203516673382095            32776
+   1.1758207593413366              109
+   1.3896063519488522              189
+   1.6033919445563682      -1754544063
+   1.8171775371638841            33088
+   2.0309631297713997      -1737435496
+   2.2447487223789153            33157
+   2.4585343149864314        550569067
+   2.6723199075939470            33064
+   2.8861055002014626        550568568
+   3.0998910928089787            32991
+   3.3136766854164943      -1739456321
+   3.5274622780240099            32916
+   3.7412478706315255              119
+   3.9550334632390420               97
+   4.1688190558465577      -1742794805
+   4.3826046484540733            32841
+   4.5963902410615889      -1742829844
+   4.8101758336691045            32929

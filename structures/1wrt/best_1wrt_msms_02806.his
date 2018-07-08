@@ -1,0 +1,55 @@
+ COALESCE PROCESS RESULTS -Version=    3.5000000000000000     
+  
+ Input File (Sanner): best_1wrt_msms.face                                                             
+  Edge fraction =    1.0270288071528040     
+  
+  Beginning polygon Area =     12872.954802488735     
+ Initial number of triangle records=        25976
+ Number of degenerate triangles, pass 1=            0
+ Number of small triangles deleted, pass 1=        17228
+ Number of polygons generated, pass 1=         8748
+ total area, pass 1 =    12663.674120583442     
+  
+ Number of small triangles deleted, pass 2=         5942
+ Number of polygons generated, pass 2=         2806
+ total area, pass 2 =    12150.584154732305     
+ Average Triangle Area (A^2)=    4.3302153081725967     
+ Average edgelength (A)=    1.9585254265377581     
+ Cut-off length (A) =    2.0114620325955102     
+ Found          19  slender obtuse triangles,           processed          19
+  
+ Histogram bins and count follows:
+ Area distribution around  0.43302153081725969       A^2
+   0.0000000000000000                0
+   8.6604306163451938E-002           0
+  0.17320861232690388                0
+  0.25981291849035582                0
+  0.34641722465380775                0
+  0.43302153081725969                0
+  0.51962583698071163                2
+  0.60623014314416357                0
+  0.69283444930761551                0
+  0.77943875547106745                0
+  0.86604306163451938                0
+ Area distribution around   4.3302153081725967      A^2
+  0.86604306163451916            32689
+   1.2124602862883269      -1498949912
+   1.5588775109421347            32706
+   1.9052947355959424      -1498945705
+   2.2517119602497502            32873
+   2.5981291849035579      -1483855939
+   2.9445464095573657            33175
+   3.2909636342111734              580
+   3.6373808588649812              465
+   3.9837980835187889      -1498944864
+   4.3302153081725967            33024
+   4.6766325328264049      -1481836993
+   5.0230497574802122            32962
+   5.3694669821340195         43337449
+   5.7158842067878277            32982
+   6.0623014314416359         43337407
+   6.4087186560954432            32875
+   6.7551358807492505      -1483857849
+   7.1015531054030587            32771
+   7.4479703300568669               76
+   7.7943875547106742              223

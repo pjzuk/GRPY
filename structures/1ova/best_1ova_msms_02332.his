@@ -1,0 +1,55 @@
+ COALESCE PROCESS RESULTS -Version=    3.5000000000000000     
+  
+ Input File (Sanner): best_1ova_msms.face                                                             
+  Edge fraction =    1.0801837697926862     
+  
+  Beginning polygon Area =     12928.086227405714     
+ Initial number of triangle records=        26092
+ Number of degenerate triangles, pass 1=            0
+ Number of small triangles deleted, pass 1=        18040
+ Number of polygons generated, pass 1=         8052
+ total area, pass 1 =    12699.158789982344     
+  
+ Number of small triangles deleted, pass 2=         5720
+ Number of polygons generated, pass 2=         2332
+ total area, pass 2 =    12118.066602508410     
+ Average Triangle Area (A^2)=    5.1964265019332805     
+ Average edgelength (A)=    2.0412401964764504     
+ Cut-off length (A) =    2.2049145304822959     
+ Found          11  slender obtuse triangles,           processed          11
+  
+ Histogram bins and count follows:
+ Area distribution around  0.51964265019332812       A^2
+   0.0000000000000000                0
+  0.10392853003866565                0
+  0.20785706007733129                0
+  0.31178559011599688                0
+  0.41571412015466247                0
+  0.51964265019332812                0
+  0.62357118023199376                0
+  0.72749971027065929                0
+  0.83142824030932494                0
+  0.93535677034799058                0
+   1.0392853003866562                0
+ Area distribution around   5.1964265019332805      A^2
+   1.0392853003866565            32537
+   1.4549994205413181         73037387
+   1.8707135406959807            32545
+   2.2864276608506433               74
+   2.7021417810053054               86
+   3.1178559011599685         57943986
+   3.5335700213146306            32756
+   3.9492841414692927         75052531
+   4.3649982616239553            32776
+   4.7807123817786179       1885609035
+   5.1964265019332805            32917
+   5.6121406220879431       1885608772
+   6.0278547422426056            32902
+   6.4435688623972682         73035853
+   6.8592829825519299            32623
+   7.2749971027065925               66
+   7.6907112228612551               66
+   8.1064253430159177         69697455
+   8.5221394631705802            32571
+   8.9378535833252428         69662410
+   9.3535677034799036            32636

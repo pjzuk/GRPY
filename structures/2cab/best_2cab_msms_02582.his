@@ -1,0 +1,55 @@
+ COALESCE PROCESS RESULTS -Version=    3.5000000000000000     
+  
+ Input File (Sanner): best_2cab_msms.face                                                             
+  Edge fraction =   0.95823500130712991     
+  
+  Beginning polygon Area =     9305.3946773019488     
+ Initial number of triangle records=        18550
+ Number of degenerate triangles, pass 1=            0
+ Number of small triangles deleted, pass 1=        11192
+ Number of polygons generated, pass 1=         7358
+ total area, pass 1 =    9205.1503721531790     
+  
+ Number of small triangles deleted, pass 2=         4776
+ Number of polygons generated, pass 2=         2582
+ total area, pass 2 =    8920.7686282785799     
+ Average Triangle Area (A^2)=    3.4549839768700927     
+ Average edgelength (A)=    1.8192831935584861     
+ Cut-off length (A) =    1.7433008333575557     
+ Found          20  slender obtuse triangles,           processed          20
+  
+ Histogram bins and count follows:
+ Area distribution around  0.34549839768700930       A^2
+   0.0000000000000000                0
+   6.9099679537401870E-002           0
+  0.13819935907480368                0
+  0.20729903861220558                0
+  0.27639871814960743                0
+  0.34549839768700930                0
+  0.41459807722441117                0
+  0.48369775676181304                0
+  0.55279743629921496                0
+  0.62189711583661667                0
+  0.69099679537401859                0
+ Area distribution around   3.4549839768700927      A^2
+  0.69099679537401837            32559
+  0.96739551352362607        960059114
+   1.2437942316732333            32571
+   1.5201929498228406        960063313
+   1.7965916679724478            32723
+   2.0729903861220556        975153019
+   2.3493891042716628            32980
+   2.6257878224212705              499
+   2.9021865405708778              478
+   3.1785852587204855        960064088
+   3.4549839768700927            32925
+   3.7313826950197000        977172014
+   4.0077814131693072            32796
+   4.2841801313189150       2101801232
+   4.5605788494685227            32949
+   4.8369775676181295       2101801146
+   5.1133762857677372            32879
+   5.3897750039173449        975151151
+   5.6661737220669526            32651
+   5.9425724402165594               53
+   6.2189711583661671              189

@@ -1,0 +1,54 @@
+ Generic file name: hydropro.dat                  
+ Case: dim1ado                       
+ Input file: hydropro.dat                  
+ Main results file: dim1ado-res.txt               
+ Open SolPro file: dim1ado-sol.txt               
+ Open Summary file: hydropro-sum.txt              
+ Open HydroFit file: hydropro-fit.txt              
+ Type of hydropro calculation : 1
+ Atomic-level primary model; non-overlapping shell model
+ Radius of elements in primary model : 2.90 Angs.
+  
+ Reading atomic coordinates from file : dim1ado.pdb                   
+ Taking all non-H atoms
+  
+  Radius of elements in primary model : 2.90 Angs.
+         Type of hydropro calculation : 1
+                           Temperature:  20.0 centigrade
+                     Solvent viscosity:  0.01000 poise
+                      Molecular weight:   157131. Da
+        Solute partial specific volume: 0.736 cm^3/g
+                      Solution density: 1.000 g/cm^3
+                      Solution density: 1.000 g(cm^3
+  
+ Prints full 6x6 diffusion tensor
+  
+ Number of elements in primary model :        11288
+
+
+ Building shell models for  6 values of minibead radius
+    between  1.50 and  2.00 Angs, increment  0.10
+ Building shell for minibead radius :   2.00
+ Building shell for minibead radius :   1.90
+ Building shell for minibead radius :   1.80
+ Building shell for minibead radius :   1.70
+ Building shell for minibead radius :   1.60
+ Building shell for minibead radius :   1.50
+  
+ Write graphics files for primary model
+  First and last beads; coord. and radius
+           1   33.61800      -3.131001       1.743000       2.900000    
+       11288   55.05400      -10.13700       22.95400       2.900000    
+  Generated coords file for graphics: coorcon.txt
+  Generating pseudo-PDB file for dim1ado-pri                   
+  Generating static VRML  file for dim1ado-pri                   
+  
+ Calculate non-hydrodynamic properties
+   -- Calculate longest distance
+
+ Number of values of minibead radii:   6
+    Calculation for minibead radius :   2.00     Number of minibeads :   3109
+    Calculation for minibead radius :   1.90     Number of minibeads :   3565
+    Calculation for minibead radius :   1.80     Number of minibeads :   4131
+    Calculation for minibead radius :   1.70     Number of minibeads :   4678
+    Calculation for minibead radius :   1.60     Number of minibeads :   5397

@@ -1,0 +1,55 @@
+ COALESCE PROCESS RESULTS -Version=    3.5000000000000000     
+  
+ Input File (Sanner): best_dim1hco_msms.face                                                          
+  Edge fraction =    1.0375557413079146     
+  
+  Beginning polygon Area =     17095.937221277880     
+ Initial number of triangle records=        34990
+ Number of degenerate triangles, pass 1=            0
+ Number of small triangles deleted, pass 1=        23102
+ Number of polygons generated, pass 1=        11888
+ total area, pass 1 =    16834.885960517833     
+  
+ Number of small triangles deleted, pass 2=         8182
+ Number of polygons generated, pass 2=         3706
+ total area, pass 2 =    16101.915690736625     
+ Average Triangle Area (A^2)=    4.3448234459623922     
+ Average edgelength (A)=    1.9323610176072767     
+ Cut-off length (A) =    2.0049322680980346     
+ Found          10  slender obtuse triangles,           processed          10
+  
+ Histogram bins and count follows:
+ Area distribution around  0.43448234459623924       A^2
+   0.0000000000000000                0
+   8.6896468919247849E-002           0
+  0.17379293783849570                0
+  0.26068940675774355                0
+  0.34758587567699140                0
+  0.43448234459623924                0
+  0.52137881351548709                0
+  0.60827528243473494                0
+  0.69517175135398279                0
+  0.78206822027323064                0
+  0.86896468919247849                0
+ Area distribution around   4.3448234459623922      A^2
+  0.86896468919247827            32537
+   1.2165505648694697        188556878
+   1.5641364405464611            32559
+   1.9117223162234525              133
+   2.2593081919004439              293
+   2.6068940675774352        173463937
+   2.9544799432544266            33364
+   3.3020658189314180        190572733
+   3.6496516946084094            33442
+   3.9972375702854008        559562528
+   4.3448234459623922            33504
+   4.6924093216393832        559561373
+   5.0399951973163750            33266
+   5.3875810729933669        188555657
+   5.7351669486703578            32867
+   6.0827528243473488              297
+   6.4303387000243406              239
+   6.7779245757013324        185217047
+   7.1255104513783234            32681
+   7.4730963270553143        185181978
+   7.8206822027323062            32909

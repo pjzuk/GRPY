@@ -1,0 +1,33 @@
+#!/bin/bash
+
+#for fold in [12345678]* dim[12345678]*
+#for fold in 1g0b 1ova dim1hco dim2aai raw1a4v 
+for fold in 1zag
+do
+    if [ -d "$fold" ]
+    then
+        cd $fold
+        isData=false
+        for i in *.bead_model
+        do 
+            if [ -f $i ]
+            then
+                j=${i%.bead_model}
+                vbar=$(head -n1 $i | cut -f2);
+                nLines=$(head -n1 $i | cut -f1);
+                mw=$(head -n $(($nLines+1)) $i | tail -n $nLines | awk '{s+=$5}END{print s}')
+                isData=true
+            fi
+        done 
+        if [ "$isData" = true ]
+        then
+		pwd
+                > specVmv
+                echo $vbar >> specVmv
+                echo $mw >> specVmv
+        fi
+        cd ..    
+    fi
+done
+
+

@@ -1,0 +1,55 @@
+ COALESCE PROCESS RESULTS -Version=    3.5000000000000000     
+  
+ Input File (Sanner): best_2eza_msms.face                                                             
+  Edge fraction =    1.0415026006650252     
+  
+  Beginning polygon Area =     12523.546523825447     
+ Initial number of triangle records=        32000
+ Number of degenerate triangles, pass 1=            0
+ Number of small triangles deleted, pass 1=        20634
+ Number of polygons generated, pass 1=        11366
+ total area, pass 1 =    12434.456700033345     
+  
+ Number of small triangles deleted, pass 2=         7922
+ Number of polygons generated, pass 2=         3444
+ total area, pass 2 =    11924.665658567095     
+ Average Triangle Area (A^2)=    3.4624464746129777     
+ Average edgelength (A)=    1.6958037220902653     
+ Cut-off length (A) =    1.7661839867744409     
+ Found          20  slender obtuse triangles,           processed          20
+  
+ Histogram bins and count follows:
+ Area distribution around  0.34624464746129779       A^2
+   0.0000000000000000                0
+   6.9248929492259581E-002           0
+  0.13849785898451913                0
+  0.20774678847677869                0
+  0.27699571796903821                0
+  0.34624464746129779                0
+  0.41549357695355738                0
+  0.48474250644581690                0
+  0.55399143593807643                0
+  0.62324036543033601                2
+  0.69248929492259559                0
+ Area distribution around   3.4624464746129777      A^2
+  0.69248929492259537            32575
+  0.96948501289163369       -838048176
+   1.2464807308606720            32601
+   1.5234764488297101              148
+   1.8004721667987482              274
+   2.0774678847677865       -853141187
+   2.3544636027368249            33312
+   2.6314593207058632       -836032495
+   2.9084550386749015            33412
+   3.1854507566439394      -2105343985
+   3.4624464746129777            33400
+   3.7394421925820160      -2105344949
+   4.0164379105510539            33253
+   4.2934336285200922       -838049437
+   4.5704293464891306            32874
+   4.8474250644581689              241
+   5.1244207824272072              212
+   5.4014165003962455       -841387998
+   5.6784122183652830            32697
+   5.9554079363343213       -841423088
+   6.2324036543033596            32896

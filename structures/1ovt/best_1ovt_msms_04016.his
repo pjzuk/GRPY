@@ -1,0 +1,55 @@
+ COALESCE PROCESS RESULTS -Version=    3.5000000000000000     
+  
+ Input File (Sanner): best_1ovt_msms.face                                                             
+  Edge fraction =    1.0780253325071709     
+  
+  Beginning polygon Area =     22491.572587325045     
+ Initial number of triangle records=        44986
+ Number of degenerate triangles, pass 1=            0
+ Number of small triangles deleted, pass 1=        31074
+ Number of polygons generated, pass 1=        13912
+ total area, pass 1 =    22095.130961847524     
+  
+ Number of small triangles deleted, pass 2=         9896
+ Number of polygons generated, pass 2=         4016
+ total area, pass 2 =    21002.826295925017     
+ Average Triangle Area (A^2)=    5.2297874242841180     
+ Average edgelength (A)=    2.0516047066456391     
+ Cut-off length (A) =    2.2116818460549421     
+ Found          22  slender obtuse triangles,           processed          22
+  
+ Histogram bins and count follows:
+ Area distribution around  0.52297874242841180       A^2
+   0.0000000000000000                0
+  0.10459574848568237                0
+  0.20919149697136474                0
+  0.31378724545704706                0
+  0.41838299394272943                0
+  0.52297874242841180                0
+  0.62757449091409412                0
+  0.73217023939977655                0
+  0.83676598788545886                0
+  0.94136173637114129                0
+   1.0459574848568236                0
+ Area distribution around   5.2297874242841180      A^2
+   1.0459574848568236            32667
+   1.4643404787995529        -13879723
+   1.8827234727422826            32707
+   2.3011064666850114              162
+   2.7194894606277411              391
+   3.1378724545704708        -28972571
+   3.5562554485132001            33582
+   3.9746384424559293        -11863874
+   4.3930214363986595            33665
+   4.8114044303413888       -639634683
+   5.2297874242841180            33483
+   5.6481704182268473       -639635842
+   6.0665534121695766            33302
+   6.4849364061123067        -13880926
+   6.9033194000550360            33027
+   7.3217023939977652              309
+   7.7400853879404945              268
+   8.1584683818832247        -17219503
+   8.5768513758259530            32812
+   8.9952343697686832        -17254621
+   9.4136173637114133            33120

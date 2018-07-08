@@ -1,0 +1,55 @@
+ COALESCE PROCESS RESULTS -Version=    3.5000000000000000     
+  
+ Input File (Sanner): best_1tpo_msms.face                                                             
+  Edge fraction =   0.83648262766752879     
+  
+  Beginning polygon Area =     7918.0690165247079     
+ Initial number of triangle records=        15044
+ Number of degenerate triangles, pass 1=            0
+ Number of small triangles deleted, pass 1=         6068
+ Number of polygons generated, pass 1=         8976
+ total area, pass 1 =    7903.8611256345221     
+  
+ Number of small triangles deleted, pass 2=         4534
+ Number of polygons generated, pass 2=         4442
+ total area, pass 2 =    7738.6388024645885     
+ Average Triangle Area (A^2)=    1.7421519141072914     
+ Average edgelength (A)=    1.5001993013728343     
+ Cut-off length (A) =    1.2548906536373394     
+ Found          41  slender obtuse triangles,           processed          41
+  
+ Histogram bins and count follows:
+ Area distribution around  0.17421519141072916       A^2
+   0.0000000000000000                0
+   3.4843038282145827E-002           0
+   6.9686076564291669E-002           0
+  0.10452911484643750                0
+  0.13937215312858334                0
+  0.17421519141072916                0
+  0.20905822969287499                0
+  0.24390126797502082                0
+  0.27874430625716667                0
+  0.31358734453931247                1
+  0.34843038282145833                0
+ Area distribution around   1.7421519141072914      A^2
+  0.34843038282145833            32722
+  0.48780253595004153       1965881083
+  0.62717468907862473            32781
+  0.76654684220720815       1965885379
+  0.90591899533579145            33404
+   1.0452911484643748       1980975854
+   1.1846633015929582            34141
+   1.3240354547215414             1525
+   1.4634076078501248             1433
+   1.6027797609787080       1965887934
+   1.7421519141072914            33897
+   1.8815240672358748       1982994597
+   2.0208962203644583            33573
+   2.1602683734930412        576637719
+   2.2996405266216247            33343
+   2.4390126797502081        576637450
+   2.5783848328787915            33169
+   2.7177569860073749       1980973349
+   2.8571291391359583            33000
+   2.9965012922645413              192
+   3.1358734453931243              722

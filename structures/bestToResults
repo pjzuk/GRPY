@@ -1,0 +1,72 @@
+#!/bin/bash
+
+
+for fold in 1ovt #list of structures
+do
+    if [ -d "$fold" ]
+    then
+        cd $fold
+        > best_pointsD
+        > best_pointsEta
+        > best_pointsTau
+        if ls *vm.be 1> /dev/null 2>&1
+        then
+            for file in *vm.be
+            do
+                line=$(grep -F "1/3 Trace DTT(EXACT)" $file)
+                nTriang="$(cut -d'_' -f4 <<< ${file%vm.be})"
+                val="$(cut -d' ' -f5 <<< $line)"
+                echo $nTriang $val >> best_pointsD
+                line=$(grep -F "ETA (cm^3/g)" $file)
+                val="$(cut -d' ' -f3 <<< $line)"
+                echo $nTriang $val >> best_pointsEta
+                lineNr=$(grep -n 'EIGENVALUES OF Drr TENSOR (1/s)' $file | cut -d: -f 1)
+                lineNr=$(( lineNr + 1 ))
+                line=$(sed "${lineNr}q;d" $file)
+                echo $nTriang $line >> best_pointsTau
+            done
+            > gpl_script
+            echo "set print \"best_fitResults\"" >> gpl_script
+            echo "set fit quiet" >> gpl_script
+            echo "set fit logfile \"/dev/null\"" >> gpl_script
+            echo "f(x) = a*x + b" >> gpl_script
+            echo "fit f(x) './best_pointsD' using (1./\$1):2 via a, b" >> gpl_script
+            echo "print sprintf(\"%.5g\", b)" >> gpl_script
+            echo "fit f(x) './best_pointsEta' using (1./\$1):2 via a, b" >> gpl_script
+            echo "print sprintf(\"%.5g\", b)" >> gpl_script
+            gnuplot gpl_script
+
+            > gpl_script
+            echo "set print \"best_fitResultsTau\"" >> gpl_script
+            echo "set fit quiet" >> gpl_script
+            echo "set fit logfile \"/dev/null\"" >> gpl_script
+            echo "f(x) = a*x + b" >> gpl_script
+            echo "fit f(x) './best_pointsTau' using (1./\$1):2 via a, b" >> gpl_script
+            echo "print sprintf(\"%.5g\", b)" >> gpl_script
+            echo "fit f(x) './best_pointsTau' using (1./\$1):3 via a, b" >> gpl_script
+            echo "print sprintf(\"%.5g\", b)" >> gpl_script
+            echo "fit f(x) './best_pointsTau' using (1./\$1):4 via a, b" >> gpl_script
+            echo "print sprintf(\"%.5g\", b)" >> gpl_script
+            gnuplot gpl_script
+            rm gpl_script
+
+            valD1=$(sed '1q;d' best_fitResultsTau) 
+            valD2=$(sed '2q;d' best_fitResultsTau) 
+            valD3=$(sed '3q;d' best_fitResultsTau)
+
+            valDtau=$(python -c  "print ("$valD1"+"$valD2"+"$valD3") / 3.")
+            valDelta=$(python -c "print ("$valD1"**2+"$valD2"**2+"$valD3"**2 -"$valD1"*"$valD2"-"$valD1"*"$valD3"-"$valD2"*"$valD3")**0.5")
+            valf1=$(python -c  "print  6*"$valDtau"+"$valDelta" ")
+            valf2=$(python -c  "print  6*"$valDtau"-"$valDelta" ")
+            valf3=$(python -c  "print  3*("$valDtau"+"$valD1") ")
+            valf4=$(python -c  "print  3*("$valDtau"+"$valD2") ")
+            valf5=$(python -c  "print  3*("$valDtau"+"$valD3") ")
+ 
+            valTau=$(python -c  "print  5./("$valf1"+"$valf2"+"$valf3"+"$valf4"+"$valf5") ")
+
+            echo $valTau >> best_fitResults
+
+        fi
+        cd ..
+    fi
+done
