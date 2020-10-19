@@ -58,7 +58,7 @@ C
       REAL*8, ALLOCATABLE :: CONF(:,:),A(:,:),RADII(:)
       CHARACTER COORDFILENAME*120,SETTINGSFILE*70,COORDFILE*150,FLAG*4
       CHARACTER PARTNAME*30,OUTPUTFILENAME*120,OUTPUTFILE*150,UTEMP*150
-      CHARACTER INPUTTYPE*10
+      CHARACTER INPUTTYPE*10,STATUSWORD*29
       INTEGER NARG,I,J,SEED,UN,STAT,USINPUT
       REAL*8 EIV(3,3),EIVINV(3,3)
       REAL, PARAMETER :: PI = 3.1415925359
@@ -85,10 +85,13 @@ C
 
        IF (TRIM(FLAG).NE.'-d') THEN
         IF (TRIM(FLAG).NE.'-u') THEN
-         CALL WRONGINPUT()
-         STOP
+         IF (TRIM(FLAG).NE.'-e') THEN
+          CALL WRONGINPUT()
+          STOP
+         ENDIF
         ENDIF
        ENDIF
+
 
        IF (TRIM(FLAG).EQ.'-d') THEN
 
@@ -126,8 +129,7 @@ C
          WRITE(*,*) 'particle name: ',TRIM(PARTNAME)
          WRITE(*,*) 'output file name: ',TRIM(OUTPUTFILENAME)
      *   // '-GRPY.dat'
-         WRITE(*,*) '...'
- 
+
          IF (J.GT.0) THEN
           COORDFILE = SETTINGSFILE(1:J) // TRIM(COORDFILENAME)
           OUTPUTFILE = SETTINGSFILE(1:J) // TRIM(OUTPUTFILENAME) 
@@ -181,7 +183,7 @@ C
          WRITE(*,*) 'completed'
         ENDDO
        
-       ELSE
+       ELSE IF (TRIM(FLAG).EQ.'-u') THEN
 
         INPUTTYPE='us-somo'
 
@@ -243,6 +245,75 @@ C
         CALL WRITESTDOUT(ATR,RR,ATRCH,RCH,UNITS,ETA,TK,VBAR,RHO,
      *                      RG2,MDD,BR,DTAU,TAU,MW,EIV,INPUTTYPE)
 
+        DEALLOCATE(CONF,A,RADII,DIAM_SPH)
+
+       ELSE IF (TRIM(FLAG).EQ.'-e') THEN
+
+        WRITE(UNIT=STATUSWORD,FMT='(A29)') 'READING DATA'
+        CALL PROGRESSSTATUS(0,STATUSWORD)
+
+        INPUTTYPE='GRPY'
+ 
+        CALL getarg(2,SETTINGSFILE)      
+ 
+        OPEN(32,FILE=SETTINGSFILE)
+ 
+        READ(32,'(A)') PARTNAME
+        READ(32,*) TK
+        READ(32,*) ETA
+        READ(32,*) MW
+        READ(32,*) VBAR
+        READ(32,*) RHO
+        READ(32,*) UNITS
+        READ(32,*) NN
+ 
+        TK = TK + 273.15
+
+        ALLOCATE( CONF(3,NN),A(11*NN,11*NN),RADII(NN) )
+ 
+        IF( .NOT.ALLOCATED( DIAM_SPH ) ) THEN
+         ALLOCATE( DIAM_SPH(NN))
+        ENDIF
+
+        V=0.D0
+        DO I=1,NN
+         READ(32,*) CONF(1,I),CONF(2,I),CONF(3,I),RADII(I)
+         DIAM_SPH(I) = 2.D0*RADII(I)
+        ENDDO
+ 
+        CLOSE(32)
+
+        WRITE(UNIT=STATUSWORD,FMT='(A29)') 'CALCULATING RC AND RG'
+        CALL PROGRESSSTATUS(1,STATUSWORD)
+
+        CALL CALCRG2(CONF,RADII,RC,RG2)
+ 
+        RR = 0.D0
+       
+        CALL HYDROPROGRESS(A,AR,CONF,RR)
+
+        WRITE(UNIT=STATUSWORD,FMT='(A29)') 'CALCULATING PROPERTIES'
+        CALL PROGRESSSTATUS(98,STATUSWORD)
+
+        CALL INTRINSIC_HIGH(AR,MDD,FDD)
+        CALL BROWN_EW(AR,BR)
+ 
+        ATR = AR(1:6,1:6)
+        CALL MATREV(ATR,6,'M')
+        CALL CALCRCH(ATR,RCH)
+        RCH = RR + RCH
+ 
+        CALL CALCATRCH(ATRCH,AR,EIV,DRR,RCH)
+ 
+        CALL CALCTAU(DTAU,TAU,DRR)
+
+        WRITE(UNIT=STATUSWORD,FMT='(A29)') 'COMPLETE'
+        CALL PROGRESSSTATUS(100,STATUSWORD)
+        WRITE(*,FMT='(A,A40,$)') CHAR(13),''
+
+        CALL WRITESTDOUT(ATR,RR,ATRCH,RCH,UNITS,ETA,TK,VBAR,RHO,
+     *                     RG2,MDD,BR,DTAU,TAU,MW,EIV,INPUTTYPE)
+ 
         DEALLOCATE(CONF,A,RADII,DIAM_SPH)
 
        ENDIF
@@ -325,13 +396,17 @@ C***********************************************************
       WRITE(*,*) 'please execute GRPY program ' //
      *           'in the following way:' 
       WRITE(*,*)
-      WRITE(*,*) '1) ./plasmaGRPY.exe <input file>    ' //
+      WRITE(*,*) '1) ./GRPY.exe <input file>    ' //
      *          '  --  input in the GRPY format'     
       WRITE(*,*) 
-      WRITE(*,*) '2) ./plasmaGRPY.exe -d <input file> ' //
+      WRITE(*,*) '2) ./GRPY.exe -e <input file> ' //
+     *          '  --  input in the GRPY format' //
+     *          ' to additionally display program progress information' 
+      WRITE(*,*) 
+      WRITE(*,*) '3) ./GRPY.exe -d <input file> ' //
      *          '  --  input in the hydro++10 format'     
       WRITE(*,*) 
-      WRITE(*,*) '3) ./plasmaGRPY.exe -u <input file> ' //
+      WRITE(*,*) '4) ./GRPY.exe -u <input file> ' //
      *          '  --  input in the us-somo .bead_model format'     
 
       RETURN
@@ -2777,9 +2852,74 @@ C***********************************************************
 *
       CALL PLASMA_FINALIZE( INFO )
 
-      DO 334 I=2,NN
-      DO 334 J=1,I-1
-334   A(I,J)=A(J,I)
+      DO I=2,NN
+       DO J=1,I-1
+        A(I,J)=A(J,I)
+       ENDDO
+      ENDDO
 
       RETURN
       END
+
+C***********************************************************
+C***********************************************************
+C***********************************************************
+
+      SUBROUTINE HYDROPROGRESS(AQQ,AR,CONF,RC)
+      USE SIZE       ! NN
+      USE TENSORS
+      USE DIAMETERS
+      USE THREADS
+      IMPLICIT NONE
+      REAL*8 APP(6*NN,6*NN),APQ(6*NN,5*NN),AQQ(5*NN,5*NN)
+      REAL*8 T(11*NN,11),FM(11*NN,11*NN)
+      REAL*8 CONF(3,NN),RADII(NN)
+      REAL*8 AR(11,11),RC(3)
+      CHARACTER STATUSWORD*29
+      INTEGER K
+      
+      RADII=0.5*DIAM_SPH
+
+      WRITE(UNIT=STATUSWORD,FMT='(A29)') 'CONSTRUCTING MATRICES'
+      CALL PROGRESSSTATUS(3,STATUSWORD)
+
+      CALL HYDRO_RP(APP,APQ,AQQ,CONF,RADII)
+
+      WRITE(UNIT=STATUSWORD,FMT='(A29)') 'INVERTING MATRICES - PLASMA'
+      K = 5 + MIN(45,100*(100*NN*NN)/(100*NN*NN + NN*NN*NN/NCORES))
+      CALL PROGRESSSTATUS(K,STATUSWORD)
+
+      CALL INVFRI_TO_FRI(APP,APQ,AQQ,NN)
+
+      FM(1:6*NN,1:6*NN)=APP
+      FM(1:6*NN,6*NN+1:11*NN)=APQ
+      FM(6*NN+1:11*NN,1:6*NN)=TRANSPOSE(APQ)
+      FM(6*NN+1:11*NN,6*NN+1:11*NN)=AQQ
+
+      CALL T_RIGID_11(CONF,RC,T,NN)
+
+      AR=MATMUL(TRANSPOSE(T),MATMUL(FM,T))
+
+      RETURN
+      END
+
+
+C***********************************************************
+C***********************************************************
+C***********************************************************
+
+
+      SUBROUTINE PROGRESSSTATUS(PROC,STATE)
+      IMPLICIT NONE
+      INTEGER PROC
+      CHARACTER*29 :: STATE
+      CHARACTER*40 :: BAR = '  0% TASK:                    '
+
+      WRITE(UNIT=BAR(1:3),FMT='(i3)') PROC
+      WRITE(UNIT=BAR(12:40),FMT='(a29)') TRIM(STATE)
+
+      WRITE(*,FMT='(A,A40,$)') CHAR(13),BAR
+
+      RETURN
+      END
+
