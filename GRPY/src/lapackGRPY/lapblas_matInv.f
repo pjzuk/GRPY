@@ -494,6 +494,8 @@ C '*_win.f' -> WINDOWS FORMAT
 *           Compute the product U * U'.
 *
             DO 10 I = 1, N, NB
+               CALL LPROGRESSSTATUS( 70 + ( 20 * I ) / N,
+     $                     'INVERTING MATRICES - LAPACK 3 of 3' )
                IB = MIN( NB, N-I+1 )
                CALL DTRMM( 'Right', 'Upper', 'Transpose', 'Non-unit',
      $                     I-1, IB, ONE, A( I, I ), LDA, A( 1, I ),
@@ -513,6 +515,8 @@ C '*_win.f' -> WINDOWS FORMAT
 *           Compute the product L' * L.
 *
             DO 20 I = 1, N, NB
+               CALL LPROGRESSSTATUS( 70 + ( 20 * I ) / N,
+     $                     'INVERTING MATRICES - LAPACK 3 of 3' )
                IB = MIN( NB, N-I+1 )
                CALL DTRMM( 'Left', 'Lower', 'Transpose', 'Non-unit', IB,
      $                     I-1, ONE, A( I, I ), LDA, A( I, 1 ), LDA )
@@ -833,6 +837,10 @@ C '*_win.f' -> WINDOWS FORMAT
 *              Update and factorize the current diagonal block and test
 *              for non-positive-definiteness.
 *
+               CALL LPROGRESSSTATUS( 30 + ( 20 * J ) / N,
+     $                     'INVERTING MATRICES - LAPACK 1 of 3' )
+*               write(*,*) "DPOTRF Loop J=",J,"\n"
+
                JB = MIN( NB, N-J+1 )
                CALL DSYRK( 'Upper', 'Transpose', JB, J-1, -ONE,
      $                     A( 1, J ), LDA, ONE, A( J, J ), LDA )
@@ -1814,6 +1822,9 @@ C '*_win.f' -> WINDOWS FORMAT
 *           Compute inverse of upper triangular matrix
 *
             DO 20 J = 1, N, NB
+               CALL LPROGRESSSTATUS( 50 + ( 20 * J ) / N,
+     $                     'INVERTING MATRICES - LAPACK 2 of 3' )
+
                JB = MIN( NB, N-J+1 )
 *
 *              Compute rows 1:j-1 of current block column
@@ -1833,6 +1844,9 @@ C '*_win.f' -> WINDOWS FORMAT
 *
             NN = ( ( N-1 ) / NB )*NB + 1
             DO 30 J = NN, 1, -NB
+               CALL LPROGRESSSTATUS( 50 + ( 20 * (NN - J ) ) / N,
+     $                     'INVERTING MATRICES - LAPACK 2 of 3' )
+
                JB = MIN( NB, N-J+1 )
                IF( J+JB.LE.N ) THEN
 *
@@ -10147,8 +10161,30 @@ c
    40    CONTINUE
       END IF
 *
+
       RETURN
 *
 *     End of DGER  .
 *
       END
+
+C***********************************************************
+C***********************************************************
+C***********************************************************
+
+
+      SUBROUTINE LPROGRESSSTATUS(PROC,STATE)
+      IMPLICIT NONE
+      INTEGER PROC
+      CHARACTER*34 :: STATE
+      CHARACTER*45 :: BAR = '  0% TASK:                    '
+
+      WRITE(UNIT=BAR(1:3),FMT='(i3)') PROC
+      WRITE(UNIT=BAR(12:45),FMT='(a34)') TRIM(STATE)
+
+      WRITE(*,FMT='(A,A38,$)') CHAR(13),BAR
+
+      RETURN
+      END
+
+      
