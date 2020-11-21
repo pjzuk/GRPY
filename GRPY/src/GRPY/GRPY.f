@@ -548,8 +548,10 @@ C***********************************************************
       REAL*8 DRR(3),DTAU,TAU(8),DELTA
 
       DTAU = (SUM(DRR))/3.D0
-      DELTA = SQRT((DRR(1)**2 + DRR(2)**2 + DRR(3)**2
-     *        -DRR(1)*DRR(2) - DRR(1)*DRR(3) - DRR(2)*DRR(3))) 
+      DELTA = (DRR(1)**2 + DRR(2)**2 + DRR(3)**2
+     *        -DRR(1)*DRR(2) - DRR(1)*DRR(3) - DRR(2)*DRR(3))
+      CALL NUMIFZERO(DELTA)
+      DELTA = SQRT(DELTA) 
       TAU(1) = 1.D0/(6.D0*DTAU + 2.D0*DELTA)
       TAU(2) = 1.D0/(6.D0*DTAU - 2.D0*DELTA)
       TAU(3) = 1.D0/3.D0/(DTAU + DRR(1))
@@ -2869,6 +2871,23 @@ C***********************************************************
       WRITE(UNIT=BAR(12:40),FMT='(a29)') TRIM(STATE)
 
       WRITE(*,FMT='(A,A40,$)') CHAR(13),BAR
+
+      RETURN
+      END
+
+
+C***********************************************************
+C***********************************************************
+C***********************************************************
+
+
+      SUBROUTINE NUMIFZERO(NUMTOTEST)
+      IMPLICIT NONE
+      REAL*8 NUMTOTEST
+
+      IF (ABS(NUMTOTEST).LE.1.D-12) THEN
+       NUMTOTEST = 0.D0
+      ENDIF
 
       RETURN
       END
