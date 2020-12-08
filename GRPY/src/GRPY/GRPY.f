@@ -2885,7 +2885,7 @@ C***********************************************************
       IMPLICIT NONE
       REAL*8 NUMTOTEST
 
-      IF (ABS(NUMTOTEST).LE.1.D-12) THEN
+      IF (NUMTOTEST.LE.0.D0) THEN
        NUMTOTEST = 0.D0
       ENDIF
 
